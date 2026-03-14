@@ -1,0 +1,1441 @@
+Date,Year,Month,StoreID,Region,Program,Participants,JobPlacements,WagesEarned
+2023-01-01,2023,1,S01,Palm Beaches,Job Training,17,12,48674.35
+2023-01-01,2023,1,S01,Palm Beaches,Youth Services,9,6,23511.69
+2023-01-01,2023,1,S01,Palm Beaches,Senior Employment,13,8,24352.8
+2023-01-01,2023,1,S01,Palm Beaches,Disability Services,13,9,31261.24
+2023-01-01,2023,1,S01,Palm Beaches,Financial Literacy,16,11,31693.91
+2023-02-01,2023,2,S01,Palm Beaches,Job Training,16,12,47459.11
+2023-02-01,2023,2,S01,Palm Beaches,Youth Services,11,7,25447.3
+2023-02-01,2023,2,S01,Palm Beaches,Senior Employment,11,6,17266.12
+2023-02-01,2023,2,S01,Palm Beaches,Disability Services,13,7,25000.11
+2023-02-01,2023,2,S01,Palm Beaches,Financial Literacy,9,7,21517.85
+2023-03-01,2023,3,S01,Palm Beaches,Job Training,17,10,29550.48
+2023-03-01,2023,3,S01,Palm Beaches,Youth Services,12,7,23691.72
+2023-03-01,2023,3,S01,Palm Beaches,Senior Employment,12,9,30247.5
+2023-03-01,2023,3,S01,Palm Beaches,Disability Services,10,7,25202.07
+2023-03-01,2023,3,S01,Palm Beaches,Financial Literacy,13,8,25519.11
+2023-04-01,2023,4,S01,Palm Beaches,Job Training,8,4,13500.35
+2023-04-01,2023,4,S01,Palm Beaches,Youth Services,19,12,37092.52
+2023-04-01,2023,4,S01,Palm Beaches,Senior Employment,18,12,37253.74
+2023-04-01,2023,4,S01,Palm Beaches,Disability Services,14,9,35015.26
+2023-04-01,2023,4,S01,Palm Beaches,Financial Literacy,12,8,29850.29
+2023-05-01,2023,5,S01,Palm Beaches,Job Training,12,9,30681.15
+2023-05-01,2023,5,S01,Palm Beaches,Youth Services,15,10,30873.61
+2023-05-01,2023,5,S01,Palm Beaches,Senior Employment,15,8,23340.26
+2023-05-01,2023,5,S01,Palm Beaches,Disability Services,12,9,35073.65
+2023-05-01,2023,5,S01,Palm Beaches,Financial Literacy,16,9,37528.55
+2023-06-01,2023,6,S01,Palm Beaches,Job Training,12,8,32188.78
+2023-06-01,2023,6,S01,Palm Beaches,Youth Services,19,14,44521.09
+2023-06-01,2023,6,S01,Palm Beaches,Senior Employment,19,13,51198.79
+2023-06-01,2023,6,S01,Palm Beaches,Disability Services,18,11,40241.31
+2023-06-01,2023,6,S01,Palm Beaches,Financial Literacy,19,12,49383.28
+2023-07-01,2023,7,S01,Palm Beaches,Job Training,13,8,28217.87
+2023-07-01,2023,7,S01,Palm Beaches,Youth Services,15,9,35500.26
+2023-07-01,2023,7,S01,Palm Beaches,Senior Employment,14,10,38048.11
+2023-07-01,2023,7,S01,Palm Beaches,Disability Services,15,8,25595.33
+2023-07-01,2023,7,S01,Palm Beaches,Financial Literacy,11,6,23147.73
+2023-08-01,2023,8,S01,Palm Beaches,Job Training,11,7,21716.07
+2023-08-01,2023,8,S01,Palm Beaches,Youth Services,19,12,47870.29
+2023-08-01,2023,8,S01,Palm Beaches,Senior Employment,15,9,34104.35
+2023-08-01,2023,8,S01,Palm Beaches,Disability Services,18,10,31320.07
+2023-08-01,2023,8,S01,Palm Beaches,Financial Literacy,13,9,28194.03
+2023-09-01,2023,9,S01,Palm Beaches,Job Training,18,14,53088.96
+2023-09-01,2023,9,S01,Palm Beaches,Youth Services,7,4,15275.99
+2023-09-01,2023,9,S01,Palm Beaches,Senior Employment,10,5,20446.2
+2023-09-01,2023,9,S01,Palm Beaches,Disability Services,12,9,25277.22
+2023-09-01,2023,9,S01,Palm Beaches,Financial Literacy,14,10,35257.71
+2023-10-01,2023,10,S01,Palm Beaches,Job Training,7,4,16465.31
+2023-10-01,2023,10,S01,Palm Beaches,Youth Services,12,9,25416.38
+2023-10-01,2023,10,S01,Palm Beaches,Senior Employment,22,12,45177.84
+2023-10-01,2023,10,S01,Palm Beaches,Disability Services,10,6,22153.36
+2023-10-01,2023,10,S01,Palm Beaches,Financial Literacy,17,13,48025.05
+2023-11-01,2023,11,S01,Palm Beaches,Job Training,18,11,45848.62
+2023-11-01,2023,11,S01,Palm Beaches,Youth Services,15,11,41200.46
+2023-11-01,2023,11,S01,Palm Beaches,Senior Employment,14,7,21568.34
+2023-11-01,2023,11,S01,Palm Beaches,Disability Services,10,6,19824.55
+2023-11-01,2023,11,S01,Palm Beaches,Financial Literacy,13,7,26204.66
+2023-12-01,2023,12,S01,Palm Beaches,Job Training,14,9,35628.76
+2023-12-01,2023,12,S01,Palm Beaches,Youth Services,13,10,39754.74
+2023-12-01,2023,12,S01,Palm Beaches,Senior Employment,13,7,25093.12
+2023-12-01,2023,12,S01,Palm Beaches,Disability Services,21,16,57774.53
+2023-12-01,2023,12,S01,Palm Beaches,Financial Literacy,11,8,25488.17
+2024-01-01,2024,1,S01,Palm Beaches,Job Training,19,11,45798.61
+2024-01-01,2024,1,S01,Palm Beaches,Youth Services,12,8,28677.3
+2024-01-01,2024,1,S01,Palm Beaches,Senior Employment,21,13,52095.32
+2024-01-01,2024,1,S01,Palm Beaches,Disability Services,10,7,25728.9
+2024-01-01,2024,1,S01,Palm Beaches,Financial Literacy,19,14,57711.96
+2024-02-01,2024,2,S01,Palm Beaches,Job Training,11,7,26478.25
+2024-02-01,2024,2,S01,Palm Beaches,Youth Services,11,6,24938.42
+2024-02-01,2024,2,S01,Palm Beaches,Senior Employment,17,10,32985.26
+2024-02-01,2024,2,S01,Palm Beaches,Disability Services,10,7,29376.97
+2024-02-01,2024,2,S01,Palm Beaches,Financial Literacy,10,6,20677.94
+2024-03-01,2024,3,S01,Palm Beaches,Job Training,10,6,23303.79
+2024-03-01,2024,3,S01,Palm Beaches,Youth Services,17,10,40726.57
+2024-03-01,2024,3,S01,Palm Beaches,Senior Employment,27,16,56574.14
+2024-03-01,2024,3,S01,Palm Beaches,Disability Services,8,5,17654.51
+2024-03-01,2024,3,S01,Palm Beaches,Financial Literacy,12,9,27795.82
+2024-04-01,2024,4,S01,Palm Beaches,Job Training,17,9,32153.04
+2024-04-01,2024,4,S01,Palm Beaches,Youth Services,8,4,14363.16
+2024-04-01,2024,4,S01,Palm Beaches,Senior Employment,17,12,36665.6
+2024-04-01,2024,4,S01,Palm Beaches,Disability Services,16,11,46123.81
+2024-04-01,2024,4,S01,Palm Beaches,Financial Literacy,22,16,46289.39
+2024-05-01,2024,5,S01,Palm Beaches,Job Training,23,14,40996.11
+2024-05-01,2024,5,S01,Palm Beaches,Youth Services,9,7,25585.34
+2024-05-01,2024,5,S01,Palm Beaches,Senior Employment,17,10,28633.21
+2024-05-01,2024,5,S01,Palm Beaches,Disability Services,11,6,17845.79
+2024-05-01,2024,5,S01,Palm Beaches,Financial Literacy,21,14,50824.88
+2024-06-01,2024,6,S01,Palm Beaches,Job Training,15,9,25846.01
+2024-06-01,2024,6,S01,Palm Beaches,Youth Services,14,9,33929.39
+2024-06-01,2024,6,S01,Palm Beaches,Senior Employment,15,9,35805.32
+2024-06-01,2024,6,S01,Palm Beaches,Disability Services,11,8,27095.04
+2024-06-01,2024,6,S01,Palm Beaches,Financial Literacy,12,6,17185.81
+2024-07-01,2024,7,S01,Palm Beaches,Job Training,9,6,23932.75
+2024-07-01,2024,7,S01,Palm Beaches,Youth Services,19,10,35963.46
+2024-07-01,2024,7,S01,Palm Beaches,Senior Employment,16,12,42137.04
+2024-07-01,2024,7,S01,Palm Beaches,Disability Services,12,6,21076.56
+2024-07-01,2024,7,S01,Palm Beaches,Financial Literacy,16,10,40830.56
+2024-08-01,2024,8,S01,Palm Beaches,Job Training,16,9,35977.24
+2024-08-01,2024,8,S01,Palm Beaches,Youth Services,17,10,40971.01
+2024-08-01,2024,8,S01,Palm Beaches,Senior Employment,12,9,29740.76
+2024-08-01,2024,8,S01,Palm Beaches,Disability Services,14,9,34222.76
+2024-08-01,2024,8,S01,Palm Beaches,Financial Literacy,8,4,13621.15
+2024-09-01,2024,9,S01,Palm Beaches,Job Training,19,13,53371.42
+2024-09-01,2024,9,S01,Palm Beaches,Youth Services,11,8,33177.51
+2024-09-01,2024,9,S01,Palm Beaches,Senior Employment,11,6,22697.1
+2024-09-01,2024,9,S01,Palm Beaches,Disability Services,18,11,33414.56
+2024-09-01,2024,9,S01,Palm Beaches,Financial Literacy,16,11,37596.95
+2024-10-01,2024,10,S01,Palm Beaches,Job Training,12,7,22204.31
+2024-10-01,2024,10,S01,Palm Beaches,Youth Services,8,4,12243.92
+2024-10-01,2024,10,S01,Palm Beaches,Senior Employment,18,12,45643.65
+2024-10-01,2024,10,S01,Palm Beaches,Disability Services,10,5,18209.16
+2024-10-01,2024,10,S01,Palm Beaches,Financial Literacy,17,11,41440.18
+2024-11-01,2024,11,S01,Palm Beaches,Job Training,14,10,28905.32
+2024-11-01,2024,11,S01,Palm Beaches,Youth Services,16,11,45536.08
+2024-11-01,2024,11,S01,Palm Beaches,Senior Employment,20,12,37538.02
+2024-11-01,2024,11,S01,Palm Beaches,Disability Services,15,10,28018.67
+2024-11-01,2024,11,S01,Palm Beaches,Financial Literacy,12,9,34363.25
+2024-12-01,2024,12,S01,Palm Beaches,Job Training,12,8,24790.62
+2024-12-01,2024,12,S01,Palm Beaches,Youth Services,15,10,36873.04
+2024-12-01,2024,12,S01,Palm Beaches,Senior Employment,15,11,38695.94
+2024-12-01,2024,12,S01,Palm Beaches,Disability Services,12,7,25836.17
+2024-12-01,2024,12,S01,Palm Beaches,Financial Literacy,15,8,27771.88
+2023-01-01,2023,1,S02,Palm Beaches,Job Training,19,13,42570.32
+2023-01-01,2023,1,S02,Palm Beaches,Youth Services,15,10,28708.06
+2023-01-01,2023,1,S02,Palm Beaches,Senior Employment,14,8,33162.28
+2023-01-01,2023,1,S02,Palm Beaches,Disability Services,10,6,24049.43
+2023-01-01,2023,1,S02,Palm Beaches,Financial Literacy,13,9,29106.21
+2023-02-01,2023,2,S02,Palm Beaches,Job Training,13,9,25758.77
+2023-02-01,2023,2,S02,Palm Beaches,Youth Services,12,8,27286.44
+2023-02-01,2023,2,S02,Palm Beaches,Senior Employment,14,9,31521.46
+2023-02-01,2023,2,S02,Palm Beaches,Disability Services,20,15,55529.07
+2023-02-01,2023,2,S02,Palm Beaches,Financial Literacy,19,11,36674.19
+2023-03-01,2023,3,S02,Palm Beaches,Job Training,12,7,25687.11
+2023-03-01,2023,3,S02,Palm Beaches,Youth Services,10,7,24269.54
+2023-03-01,2023,3,S02,Palm Beaches,Senior Employment,19,10,36668.91
+2023-03-01,2023,3,S02,Palm Beaches,Disability Services,13,10,41578.96
+2023-03-01,2023,3,S02,Palm Beaches,Financial Literacy,15,8,24200.01
+2023-04-01,2023,4,S02,Palm Beaches,Job Training,17,11,35552.56
+2023-04-01,2023,4,S02,Palm Beaches,Youth Services,15,10,30433.18
+2023-04-01,2023,4,S02,Palm Beaches,Senior Employment,7,4,16178.35
+2023-04-01,2023,4,S02,Palm Beaches,Disability Services,6,4,13893.98
+2023-04-01,2023,4,S02,Palm Beaches,Financial Literacy,5,3,11167.11
+2023-05-01,2023,5,S02,Palm Beaches,Job Training,12,7,22979.76
+2023-05-01,2023,5,S02,Palm Beaches,Youth Services,9,5,14985.68
+2023-05-01,2023,5,S02,Palm Beaches,Senior Employment,20,11,45579.79
+2023-05-01,2023,5,S02,Palm Beaches,Disability Services,19,14,43514.54
+2023-05-01,2023,5,S02,Palm Beaches,Financial Literacy,18,13,50903.79
+2023-06-01,2023,6,S02,Palm Beaches,Job Training,12,7,22820.2
+2023-06-01,2023,6,S02,Palm Beaches,Youth Services,11,7,29007.3
+2023-06-01,2023,6,S02,Palm Beaches,Senior Employment,12,9,30688.64
+2023-06-01,2023,6,S02,Palm Beaches,Disability Services,13,10,38569.04
+2023-06-01,2023,6,S02,Palm Beaches,Financial Literacy,11,7,25247.05
+2023-07-01,2023,7,S02,Palm Beaches,Job Training,18,13,47250.16
+2023-07-01,2023,7,S02,Palm Beaches,Youth Services,19,12,47591.76
+2023-07-01,2023,7,S02,Palm Beaches,Senior Employment,12,8,28908.57
+2023-07-01,2023,7,S02,Palm Beaches,Disability Services,14,8,27355.67
+2023-07-01,2023,7,S02,Palm Beaches,Financial Literacy,9,5,16336.89
+2023-08-01,2023,8,S02,Palm Beaches,Job Training,14,8,30082.41
+2023-08-01,2023,8,S02,Palm Beaches,Youth Services,13,9,25302.07
+2023-08-01,2023,8,S02,Palm Beaches,Senior Employment,15,11,46069.22
+2023-08-01,2023,8,S02,Palm Beaches,Disability Services,14,8,27301.09
+2023-08-01,2023,8,S02,Palm Beaches,Financial Literacy,19,11,37659.68
+2023-09-01,2023,9,S02,Palm Beaches,Job Training,16,12,35186.88
+2023-09-01,2023,9,S02,Palm Beaches,Youth Services,12,7,26032.85
+2023-09-01,2023,9,S02,Palm Beaches,Senior Employment,10,5,20509.89
+2023-09-01,2023,9,S02,Palm Beaches,Disability Services,15,9,32667.5
+2023-09-01,2023,9,S02,Palm Beaches,Financial Literacy,17,9,32125.84
+2023-10-01,2023,10,S02,Palm Beaches,Job Training,14,8,25422.13
+2023-10-01,2023,10,S02,Palm Beaches,Youth Services,13,7,28002.67
+2023-10-01,2023,10,S02,Palm Beaches,Senior Employment,15,11,35143.45
+2023-10-01,2023,10,S02,Palm Beaches,Disability Services,14,10,33659.68
+2023-10-01,2023,10,S02,Palm Beaches,Financial Literacy,13,8,25219.71
+2023-11-01,2023,11,S02,Palm Beaches,Job Training,12,9,29032.7
+2023-11-01,2023,11,S02,Palm Beaches,Youth Services,14,7,28313.62
+2023-11-01,2023,11,S02,Palm Beaches,Senior Employment,10,6,21444.7
+2023-11-01,2023,11,S02,Palm Beaches,Disability Services,19,12,42642.65
+2023-11-01,2023,11,S02,Palm Beaches,Financial Literacy,18,13,43673.42
+2023-12-01,2023,12,S02,Palm Beaches,Job Training,10,5,17603.37
+2023-12-01,2023,12,S02,Palm Beaches,Youth Services,7,4,14314.25
+2023-12-01,2023,12,S02,Palm Beaches,Senior Employment,13,7,24067.65
+2023-12-01,2023,12,S02,Palm Beaches,Disability Services,9,7,24762.15
+2023-12-01,2023,12,S02,Palm Beaches,Financial Literacy,14,8,27797.36
+2024-01-01,2024,1,S02,Palm Beaches,Job Training,9,5,19366.98
+2024-01-01,2024,1,S02,Palm Beaches,Youth Services,12,9,27338.39
+2024-01-01,2024,1,S02,Palm Beaches,Senior Employment,11,8,32246.87
+2024-01-01,2024,1,S02,Palm Beaches,Disability Services,14,9,28267.52
+2024-01-01,2024,1,S02,Palm Beaches,Financial Literacy,10,6,20929.55
+2024-02-01,2024,2,S02,Palm Beaches,Job Training,14,8,27137.76
+2024-02-01,2024,2,S02,Palm Beaches,Youth Services,12,8,30763.28
+2024-02-01,2024,2,S02,Palm Beaches,Senior Employment,8,4,11387.93
+2024-02-01,2024,2,S02,Palm Beaches,Disability Services,15,11,40073.18
+2024-02-01,2024,2,S02,Palm Beaches,Financial Literacy,14,9,25709.53
+2024-03-01,2024,3,S02,Palm Beaches,Job Training,10,5,18627.19
+2024-03-01,2024,3,S02,Palm Beaches,Youth Services,18,12,45163.18
+2024-03-01,2024,3,S02,Palm Beaches,Senior Employment,15,10,35804.64
+2024-03-01,2024,3,S02,Palm Beaches,Disability Services,17,12,44399.1
+2024-03-01,2024,3,S02,Palm Beaches,Financial Literacy,15,9,28245.06
+2024-04-01,2024,4,S02,Palm Beaches,Job Training,12,7,20291.24
+2024-04-01,2024,4,S02,Palm Beaches,Youth Services,18,12,45154.59
+2024-04-01,2024,4,S02,Palm Beaches,Senior Employment,15,9,28789.85
+2024-04-01,2024,4,S02,Palm Beaches,Disability Services,10,5,16005.83
+2024-04-01,2024,4,S02,Palm Beaches,Financial Literacy,12,7,22689.34
+2024-05-01,2024,5,S02,Palm Beaches,Job Training,19,14,42715.33
+2024-05-01,2024,5,S02,Palm Beaches,Youth Services,11,7,19990.1
+2024-05-01,2024,5,S02,Palm Beaches,Senior Employment,18,12,35039.16
+2024-05-01,2024,5,S02,Palm Beaches,Disability Services,23,13,38750.28
+2024-05-01,2024,5,S02,Palm Beaches,Financial Literacy,23,16,55986.66
+2024-06-01,2024,6,S02,Palm Beaches,Job Training,15,10,31456.83
+2024-06-01,2024,6,S02,Palm Beaches,Youth Services,14,10,29708.75
+2024-06-01,2024,6,S02,Palm Beaches,Senior Employment,10,6,23411.28
+2024-06-01,2024,6,S02,Palm Beaches,Disability Services,12,7,26931.48
+2024-06-01,2024,6,S02,Palm Beaches,Financial Literacy,11,8,33086.52
+2024-07-01,2024,7,S02,Palm Beaches,Job Training,10,6,19472.31
+2024-07-01,2024,7,S02,Palm Beaches,Youth Services,18,13,51467.24
+2024-07-01,2024,7,S02,Palm Beaches,Senior Employment,10,6,17479.31
+2024-07-01,2024,7,S02,Palm Beaches,Disability Services,17,9,29217.53
+2024-07-01,2024,7,S02,Palm Beaches,Financial Literacy,18,10,31876.62
+2024-08-01,2024,8,S02,Palm Beaches,Job Training,11,6,21627.95
+2024-08-01,2024,8,S02,Palm Beaches,Youth Services,12,7,24153.35
+2024-08-01,2024,8,S02,Palm Beaches,Senior Employment,19,10,36294.24
+2024-08-01,2024,8,S02,Palm Beaches,Disability Services,18,12,47278.74
+2024-08-01,2024,8,S02,Palm Beaches,Financial Literacy,14,10,37759.96
+2024-09-01,2024,9,S02,Palm Beaches,Job Training,12,7,21780.79
+2024-09-01,2024,9,S02,Palm Beaches,Youth Services,17,12,45249.55
+2024-09-01,2024,9,S02,Palm Beaches,Senior Employment,11,7,27069.28
+2024-09-01,2024,9,S02,Palm Beaches,Disability Services,21,16,55407.08
+2024-09-01,2024,9,S02,Palm Beaches,Financial Literacy,19,12,38160.54
+2024-10-01,2024,10,S02,Palm Beaches,Job Training,11,8,22503.51
+2024-10-01,2024,10,S02,Palm Beaches,Youth Services,12,8,25247.63
+2024-10-01,2024,10,S02,Palm Beaches,Senior Employment,11,7,20788.79
+2024-10-01,2024,10,S02,Palm Beaches,Disability Services,10,7,23492.09
+2024-10-01,2024,10,S02,Palm Beaches,Financial Literacy,16,10,29037.67
+2024-11-01,2024,11,S02,Palm Beaches,Job Training,14,10,41900.65
+2024-11-01,2024,11,S02,Palm Beaches,Youth Services,14,11,43605.64
+2024-11-01,2024,11,S02,Palm Beaches,Senior Employment,15,8,28135.56
+2024-11-01,2024,11,S02,Palm Beaches,Disability Services,11,7,20883.94
+2024-11-01,2024,11,S02,Palm Beaches,Financial Literacy,17,11,33054.19
+2024-12-01,2024,12,S02,Palm Beaches,Job Training,9,7,20543.26
+2024-12-01,2024,12,S02,Palm Beaches,Youth Services,15,9,28943.68
+2024-12-01,2024,12,S02,Palm Beaches,Senior Employment,12,8,29900.9
+2024-12-01,2024,12,S02,Palm Beaches,Disability Services,19,13,44773.21
+2024-12-01,2024,12,S02,Palm Beaches,Financial Literacy,18,12,48421.17
+2023-01-01,2023,1,S03,Palm Beaches,Job Training,13,8,26274.89
+2023-01-01,2023,1,S03,Palm Beaches,Youth Services,14,9,26504.07
+2023-01-01,2023,1,S03,Palm Beaches,Senior Employment,16,9,33803.75
+2023-01-01,2023,1,S03,Palm Beaches,Disability Services,15,10,29718.36
+2023-01-01,2023,1,S03,Palm Beaches,Financial Literacy,24,14,55147.11
+2023-02-01,2023,2,S03,Palm Beaches,Job Training,15,10,33277.91
+2023-02-01,2023,2,S03,Palm Beaches,Youth Services,20,15,46847.17
+2023-02-01,2023,2,S03,Palm Beaches,Senior Employment,18,12,48520.21
+2023-02-01,2023,2,S03,Palm Beaches,Disability Services,14,10,38310.92
+2023-02-01,2023,2,S03,Palm Beaches,Financial Literacy,21,12,34403.23
+2023-03-01,2023,3,S03,Palm Beaches,Job Training,11,7,21412.46
+2023-03-01,2023,3,S03,Palm Beaches,Youth Services,4,3,10884.09
+2023-03-01,2023,3,S03,Palm Beaches,Senior Employment,12,6,25034.71
+2023-03-01,2023,3,S03,Palm Beaches,Disability Services,15,10,38687.34
+2023-03-01,2023,3,S03,Palm Beaches,Financial Literacy,13,7,22332.61
+2023-04-01,2023,4,S03,Palm Beaches,Job Training,8,4,16338.75
+2023-04-01,2023,4,S03,Palm Beaches,Youth Services,7,4,16232.68
+2023-04-01,2023,4,S03,Palm Beaches,Senior Employment,7,4,13164.02
+2023-04-01,2023,4,S03,Palm Beaches,Disability Services,11,8,22791.8
+2023-04-01,2023,4,S03,Palm Beaches,Financial Literacy,17,13,53338.94
+2023-05-01,2023,5,S03,Palm Beaches,Job Training,17,10,35633.3
+2023-05-01,2023,5,S03,Palm Beaches,Youth Services,17,11,35915.47
+2023-05-01,2023,5,S03,Palm Beaches,Senior Employment,9,5,15992.89
+2023-05-01,2023,5,S03,Palm Beaches,Disability Services,23,12,38368.62
+2023-05-01,2023,5,S03,Palm Beaches,Financial Literacy,9,5,18152.82
+2023-06-01,2023,6,S03,Palm Beaches,Job Training,10,7,23758.51
+2023-06-01,2023,6,S03,Palm Beaches,Youth Services,20,12,46206.53
+2023-06-01,2023,6,S03,Palm Beaches,Senior Employment,7,4,13926.87
+2023-06-01,2023,6,S03,Palm Beaches,Disability Services,13,8,33394.04
+2023-06-01,2023,6,S03,Palm Beaches,Financial Literacy,11,6,18553.44
+2023-07-01,2023,7,S03,Palm Beaches,Job Training,22,17,51152.43
+2023-07-01,2023,7,S03,Palm Beaches,Youth Services,18,11,34138.07
+2023-07-01,2023,7,S03,Palm Beaches,Senior Employment,15,10,28219.06
+2023-07-01,2023,7,S03,Palm Beaches,Disability Services,7,4,15762.86
+2023-07-01,2023,7,S03,Palm Beaches,Financial Literacy,19,13,50384.24
+2023-08-01,2023,8,S03,Palm Beaches,Job Training,11,7,20921.77
+2023-08-01,2023,8,S03,Palm Beaches,Youth Services,15,8,26183.96
+2023-08-01,2023,8,S03,Palm Beaches,Senior Employment,7,5,14135.09
+2023-08-01,2023,8,S03,Palm Beaches,Disability Services,16,11,39865.85
+2023-08-01,2023,8,S03,Palm Beaches,Financial Literacy,11,7,27660.85
+2023-09-01,2023,9,S03,Palm Beaches,Job Training,14,10,40324.08
+2023-09-01,2023,9,S03,Palm Beaches,Youth Services,24,17,52613.37
+2023-09-01,2023,9,S03,Palm Beaches,Senior Employment,14,8,32831.21
+2023-09-01,2023,9,S03,Palm Beaches,Disability Services,9,6,17814.2
+2023-09-01,2023,9,S03,Palm Beaches,Financial Literacy,12,7,27446.11
+2023-10-01,2023,10,S03,Palm Beaches,Job Training,26,15,51553.64
+2023-10-01,2023,10,S03,Palm Beaches,Youth Services,17,9,32019.38
+2023-10-01,2023,10,S03,Palm Beaches,Senior Employment,23,15,62346.94
+2023-10-01,2023,10,S03,Palm Beaches,Disability Services,16,11,45808.98
+2023-10-01,2023,10,S03,Palm Beaches,Financial Literacy,16,9,29023.83
+2023-11-01,2023,11,S03,Palm Beaches,Job Training,17,11,34640.03
+2023-11-01,2023,11,S03,Palm Beaches,Youth Services,18,13,47369.68
+2023-11-01,2023,11,S03,Palm Beaches,Senior Employment,10,6,19517.13
+2023-11-01,2023,11,S03,Palm Beaches,Disability Services,12,9,25597.34
+2023-11-01,2023,11,S03,Palm Beaches,Financial Literacy,16,11,36286.22
+2023-12-01,2023,12,S03,Palm Beaches,Job Training,16,11,32555.01
+2023-12-01,2023,12,S03,Palm Beaches,Youth Services,16,8,27046.1
+2023-12-01,2023,12,S03,Palm Beaches,Senior Employment,13,9,29091.43
+2023-12-01,2023,12,S03,Palm Beaches,Disability Services,12,8,28759.65
+2023-12-01,2023,12,S03,Palm Beaches,Financial Literacy,12,8,27655.54
+2024-01-01,2024,1,S03,Palm Beaches,Job Training,15,10,32045.41
+2024-01-01,2024,1,S03,Palm Beaches,Youth Services,9,6,24132.14
+2024-01-01,2024,1,S03,Palm Beaches,Senior Employment,14,10,39654.85
+2024-01-01,2024,1,S03,Palm Beaches,Disability Services,20,15,42323.71
+2024-01-01,2024,1,S03,Palm Beaches,Financial Literacy,8,5,14487.07
+2024-02-01,2024,2,S03,Palm Beaches,Job Training,15,9,36167.11
+2024-02-01,2024,2,S03,Palm Beaches,Youth Services,10,7,19898.14
+2024-02-01,2024,2,S03,Palm Beaches,Senior Employment,17,13,52348.6
+2024-02-01,2024,2,S03,Palm Beaches,Disability Services,12,6,18966.11
+2024-02-01,2024,2,S03,Palm Beaches,Financial Literacy,8,6,19716.2
+2024-03-01,2024,3,S03,Palm Beaches,Job Training,16,10,41574.01
+2024-03-01,2024,3,S03,Palm Beaches,Youth Services,12,7,20199.23
+2024-03-01,2024,3,S03,Palm Beaches,Senior Employment,15,8,23179.43
+2024-03-01,2024,3,S03,Palm Beaches,Disability Services,18,12,48523.87
+2024-03-01,2024,3,S03,Palm Beaches,Financial Literacy,19,12,48126.59
+2024-04-01,2024,4,S03,Palm Beaches,Job Training,22,12,49706.89
+2024-04-01,2024,4,S03,Palm Beaches,Youth Services,14,7,21133.78
+2024-04-01,2024,4,S03,Palm Beaches,Senior Employment,11,7,29266.71
+2024-04-01,2024,4,S03,Palm Beaches,Disability Services,14,9,31996.87
+2024-04-01,2024,4,S03,Palm Beaches,Financial Literacy,15,8,23493.86
+2024-05-01,2024,5,S03,Palm Beaches,Job Training,22,14,42638.92
+2024-05-01,2024,5,S03,Palm Beaches,Youth Services,20,14,41112.55
+2024-05-01,2024,5,S03,Palm Beaches,Senior Employment,15,11,44906.28
+2024-05-01,2024,5,S03,Palm Beaches,Disability Services,12,7,20403.29
+2024-05-01,2024,5,S03,Palm Beaches,Financial Literacy,14,9,35649.01
+2024-06-01,2024,6,S03,Palm Beaches,Job Training,18,14,40391.31
+2024-06-01,2024,6,S03,Palm Beaches,Youth Services,21,14,47478.1
+2024-06-01,2024,6,S03,Palm Beaches,Senior Employment,10,5,15427.21
+2024-06-01,2024,6,S03,Palm Beaches,Disability Services,10,7,25175.91
+2024-06-01,2024,6,S03,Palm Beaches,Financial Literacy,20,14,52285.1
+2024-07-01,2024,7,S03,Palm Beaches,Job Training,14,7,28026.54
+2024-07-01,2024,7,S03,Palm Beaches,Youth Services,18,13,36630.1
+2024-07-01,2024,7,S03,Palm Beaches,Senior Employment,10,7,27007.57
+2024-07-01,2024,7,S03,Palm Beaches,Disability Services,19,12,45441.25
+2024-07-01,2024,7,S03,Palm Beaches,Financial Literacy,9,5,15269.28
+2024-08-01,2024,8,S03,Palm Beaches,Job Training,15,8,24474.5
+2024-08-01,2024,8,S03,Palm Beaches,Youth Services,10,6,20119.25
+2024-08-01,2024,8,S03,Palm Beaches,Senior Employment,17,12,45683.71
+2024-08-01,2024,8,S03,Palm Beaches,Disability Services,9,6,17470.58
+2024-08-01,2024,8,S03,Palm Beaches,Financial Literacy,9,6,21691.91
+2024-09-01,2024,9,S03,Palm Beaches,Job Training,14,8,24106.96
+2024-09-01,2024,9,S03,Palm Beaches,Youth Services,9,5,15683.58
+2024-09-01,2024,9,S03,Palm Beaches,Senior Employment,12,7,21392.3
+2024-09-01,2024,9,S03,Palm Beaches,Disability Services,9,5,16547.16
+2024-09-01,2024,9,S03,Palm Beaches,Financial Literacy,9,5,16463.34
+2024-10-01,2024,10,S03,Palm Beaches,Job Training,8,6,19562.2
+2024-10-01,2024,10,S03,Palm Beaches,Youth Services,23,16,63987.49
+2024-10-01,2024,10,S03,Palm Beaches,Senior Employment,7,5,19387.2
+2024-10-01,2024,10,S03,Palm Beaches,Disability Services,20,14,49454.29
+2024-10-01,2024,10,S03,Palm Beaches,Financial Literacy,19,11,31348.7
+2024-11-01,2024,11,S03,Palm Beaches,Job Training,22,13,39114.26
+2024-11-01,2024,11,S03,Palm Beaches,Youth Services,19,12,38708.38
+2024-11-01,2024,11,S03,Palm Beaches,Senior Employment,8,5,17686.83
+2024-11-01,2024,11,S03,Palm Beaches,Disability Services,22,16,45965.97
+2024-11-01,2024,11,S03,Palm Beaches,Financial Literacy,7,4,11362.62
+2024-12-01,2024,12,S03,Palm Beaches,Job Training,19,13,50956.9
+2024-12-01,2024,12,S03,Palm Beaches,Youth Services,16,11,40475.5
+2024-12-01,2024,12,S03,Palm Beaches,Senior Employment,18,14,43066.85
+2024-12-01,2024,12,S03,Palm Beaches,Disability Services,23,16,47027.94
+2024-12-01,2024,12,S03,Palm Beaches,Financial Literacy,14,10,28561.95
+2023-01-01,2023,1,S04,Palm Beaches,Job Training,14,11,44618.37
+2023-01-01,2023,1,S04,Palm Beaches,Youth Services,20,14,47865.23
+2023-01-01,2023,1,S04,Palm Beaches,Senior Employment,16,10,33942.07
+2023-01-01,2023,1,S04,Palm Beaches,Disability Services,12,9,31457.46
+2023-01-01,2023,1,S04,Palm Beaches,Financial Literacy,19,12,49917.78
+2023-02-01,2023,2,S04,Palm Beaches,Job Training,12,7,20720.37
+2023-02-01,2023,2,S04,Palm Beaches,Youth Services,11,8,26213.05
+2023-02-01,2023,2,S04,Palm Beaches,Senior Employment,12,8,24806.56
+2023-02-01,2023,2,S04,Palm Beaches,Disability Services,8,5,17668.51
+2023-02-01,2023,2,S04,Palm Beaches,Financial Literacy,11,6,21519.1
+2023-03-01,2023,3,S04,Palm Beaches,Job Training,7,3,11907.91
+2023-03-01,2023,3,S04,Palm Beaches,Youth Services,10,7,26913.41
+2023-03-01,2023,3,S04,Palm Beaches,Senior Employment,10,7,23428.88
+2023-03-01,2023,3,S04,Palm Beaches,Disability Services,17,10,34316.88
+2023-03-01,2023,3,S04,Palm Beaches,Financial Literacy,6,3,10367.32
+2023-04-01,2023,4,S04,Palm Beaches,Job Training,19,14,51559.93
+2023-04-01,2023,4,S04,Palm Beaches,Youth Services,21,12,37483.34
+2023-04-01,2023,4,S04,Palm Beaches,Senior Employment,13,8,27679.32
+2023-04-01,2023,4,S04,Palm Beaches,Disability Services,23,17,70017.47
+2023-04-01,2023,4,S04,Palm Beaches,Financial Literacy,19,12,39442.03
+2023-05-01,2023,5,S04,Palm Beaches,Job Training,13,9,30896.95
+2023-05-01,2023,5,S04,Palm Beaches,Youth Services,17,11,34487.76
+2023-05-01,2023,5,S04,Palm Beaches,Senior Employment,19,12,43649.66
+2023-05-01,2023,5,S04,Palm Beaches,Disability Services,10,6,19770.56
+2023-05-01,2023,5,S04,Palm Beaches,Financial Literacy,14,9,33442.52
+2023-06-01,2023,6,S04,Palm Beaches,Job Training,12,8,31928.74
+2023-06-01,2023,6,S04,Palm Beaches,Youth Services,11,7,24826.6
+2023-06-01,2023,6,S04,Palm Beaches,Senior Employment,16,11,31754.35
+2023-06-01,2023,6,S04,Palm Beaches,Disability Services,14,9,27078.53
+2023-06-01,2023,6,S04,Palm Beaches,Financial Literacy,17,10,41179.76
+2023-07-01,2023,7,S04,Palm Beaches,Job Training,14,8,26155.23
+2023-07-01,2023,7,S04,Palm Beaches,Youth Services,9,6,17156.76
+2023-07-01,2023,7,S04,Palm Beaches,Senior Employment,14,10,32969.19
+2023-07-01,2023,7,S04,Palm Beaches,Disability Services,15,11,46119.21
+2023-07-01,2023,7,S04,Palm Beaches,Financial Literacy,18,12,47628.5
+2023-08-01,2023,8,S04,Palm Beaches,Job Training,9,5,15902.17
+2023-08-01,2023,8,S04,Palm Beaches,Youth Services,17,11,41714.05
+2023-08-01,2023,8,S04,Palm Beaches,Senior Employment,13,9,33992.34
+2023-08-01,2023,8,S04,Palm Beaches,Disability Services,14,8,26668.85
+2023-08-01,2023,8,S04,Palm Beaches,Financial Literacy,17,13,42704.47
+2023-09-01,2023,9,S04,Palm Beaches,Job Training,12,7,24658.02
+2023-09-01,2023,9,S04,Palm Beaches,Youth Services,12,8,23742.22
+2023-09-01,2023,9,S04,Palm Beaches,Senior Employment,10,7,21408.44
+2023-09-01,2023,9,S04,Palm Beaches,Disability Services,11,7,25859.49
+2023-09-01,2023,9,S04,Palm Beaches,Financial Literacy,14,10,36650.03
+2023-10-01,2023,10,S04,Palm Beaches,Job Training,17,13,47591.36
+2023-10-01,2023,10,S04,Palm Beaches,Youth Services,18,10,35593.74
+2023-10-01,2023,10,S04,Palm Beaches,Senior Employment,12,8,31764.46
+2023-10-01,2023,10,S04,Palm Beaches,Disability Services,16,9,37601.55
+2023-10-01,2023,10,S04,Palm Beaches,Financial Literacy,18,11,39048.73
+2023-11-01,2023,11,S04,Palm Beaches,Job Training,9,5,17871.26
+2023-11-01,2023,11,S04,Palm Beaches,Youth Services,16,10,40259.15
+2023-11-01,2023,11,S04,Palm Beaches,Senior Employment,10,5,19355.3
+2023-11-01,2023,11,S04,Palm Beaches,Disability Services,13,8,22649.2
+2023-11-01,2023,11,S04,Palm Beaches,Financial Literacy,16,11,33388.78
+2023-12-01,2023,12,S04,Palm Beaches,Job Training,12,9,29880.07
+2023-12-01,2023,12,S04,Palm Beaches,Youth Services,18,13,48366.39
+2023-12-01,2023,12,S04,Palm Beaches,Senior Employment,10,5,16680.77
+2023-12-01,2023,12,S04,Palm Beaches,Disability Services,10,7,19717.69
+2023-12-01,2023,12,S04,Palm Beaches,Financial Literacy,14,10,35084.07
+2024-01-01,2024,1,S04,Palm Beaches,Job Training,15,9,25905.97
+2024-01-01,2024,1,S04,Palm Beaches,Youth Services,14,9,29071.9
+2024-01-01,2024,1,S04,Palm Beaches,Senior Employment,15,11,44575.63
+2024-01-01,2024,1,S04,Palm Beaches,Disability Services,10,7,20537.72
+2024-01-01,2024,1,S04,Palm Beaches,Financial Literacy,12,9,35941.63
+2024-02-01,2024,2,S04,Palm Beaches,Job Training,16,12,49264.79
+2024-02-01,2024,2,S04,Palm Beaches,Youth Services,27,15,56211.47
+2024-02-01,2024,2,S04,Palm Beaches,Senior Employment,15,8,32346.5
+2024-02-01,2024,2,S04,Palm Beaches,Disability Services,20,15,54467.18
+2024-02-01,2024,2,S04,Palm Beaches,Financial Literacy,19,10,34072.18
+2024-03-01,2024,3,S04,Palm Beaches,Job Training,14,8,33503.7
+2024-03-01,2024,3,S04,Palm Beaches,Youth Services,11,7,24864.64
+2024-03-01,2024,3,S04,Palm Beaches,Senior Employment,14,9,32882.16
+2024-03-01,2024,3,S04,Palm Beaches,Disability Services,18,12,48454.47
+2024-03-01,2024,3,S04,Palm Beaches,Financial Literacy,22,14,58438.21
+2024-04-01,2024,4,S04,Palm Beaches,Job Training,10,7,28110.96
+2024-04-01,2024,4,S04,Palm Beaches,Youth Services,15,11,42173.82
+2024-04-01,2024,4,S04,Palm Beaches,Senior Employment,11,7,28017.34
+2024-04-01,2024,4,S04,Palm Beaches,Disability Services,20,13,50502.27
+2024-04-01,2024,4,S04,Palm Beaches,Financial Literacy,18,10,40965.14
+2024-05-01,2024,5,S04,Palm Beaches,Job Training,14,9,33690.36
+2024-05-01,2024,5,S04,Palm Beaches,Youth Services,11,7,26759.49
+2024-05-01,2024,5,S04,Palm Beaches,Senior Employment,22,12,42969.44
+2024-05-01,2024,5,S04,Palm Beaches,Disability Services,11,7,29113.14
+2024-05-01,2024,5,S04,Palm Beaches,Financial Literacy,11,7,21943.93
+2024-06-01,2024,6,S04,Palm Beaches,Job Training,16,10,33078.31
+2024-06-01,2024,6,S04,Palm Beaches,Youth Services,12,7,22330.56
+2024-06-01,2024,6,S04,Palm Beaches,Senior Employment,14,9,33924.75
+2024-06-01,2024,6,S04,Palm Beaches,Disability Services,16,10,35267.28
+2024-06-01,2024,6,S04,Palm Beaches,Financial Literacy,19,13,44309.76
+2024-07-01,2024,7,S04,Palm Beaches,Job Training,14,8,26192.16
+2024-07-01,2024,7,S04,Palm Beaches,Youth Services,11,6,21667.01
+2024-07-01,2024,7,S04,Palm Beaches,Senior Employment,16,12,45861.88
+2024-07-01,2024,7,S04,Palm Beaches,Disability Services,18,12,48078.71
+2024-07-01,2024,7,S04,Palm Beaches,Financial Literacy,15,10,39793.0
+2024-08-01,2024,8,S04,Palm Beaches,Job Training,11,6,22597.77
+2024-08-01,2024,8,S04,Palm Beaches,Youth Services,18,12,40566.79
+2024-08-01,2024,8,S04,Palm Beaches,Senior Employment,9,5,16908.92
+2024-08-01,2024,8,S04,Palm Beaches,Disability Services,14,10,36498.4
+2024-08-01,2024,8,S04,Palm Beaches,Financial Literacy,17,12,36964.47
+2024-09-01,2024,9,S04,Palm Beaches,Job Training,16,10,40455.99
+2024-09-01,2024,9,S04,Palm Beaches,Youth Services,14,11,44976.24
+2024-09-01,2024,9,S04,Palm Beaches,Senior Employment,17,9,35163.43
+2024-09-01,2024,9,S04,Palm Beaches,Disability Services,7,4,12096.72
+2024-09-01,2024,9,S04,Palm Beaches,Financial Literacy,9,5,15435.66
+2024-10-01,2024,10,S04,Palm Beaches,Job Training,17,11,38600.93
+2024-10-01,2024,10,S04,Palm Beaches,Youth Services,11,8,29176.03
+2024-10-01,2024,10,S04,Palm Beaches,Senior Employment,14,10,33093.0
+2024-10-01,2024,10,S04,Palm Beaches,Disability Services,18,13,52912.67
+2024-10-01,2024,10,S04,Palm Beaches,Financial Literacy,21,14,44407.3
+2024-11-01,2024,11,S04,Palm Beaches,Job Training,22,12,40869.44
+2024-11-01,2024,11,S04,Palm Beaches,Youth Services,9,6,19637.15
+2024-11-01,2024,11,S04,Palm Beaches,Senior Employment,12,8,24652.14
+2024-11-01,2024,11,S04,Palm Beaches,Disability Services,9,5,20987.88
+2024-11-01,2024,11,S04,Palm Beaches,Financial Literacy,6,3,9662.65
+2024-12-01,2024,12,S04,Palm Beaches,Job Training,16,11,35919.69
+2024-12-01,2024,12,S04,Palm Beaches,Youth Services,16,12,47641.23
+2024-12-01,2024,12,S04,Palm Beaches,Senior Employment,16,10,38762.29
+2024-12-01,2024,12,S04,Palm Beaches,Disability Services,20,12,46638.76
+2024-12-01,2024,12,S04,Palm Beaches,Financial Literacy,14,9,32795.84
+2023-01-01,2023,1,S05,Treasure Coast,Job Training,10,5,17911.72
+2023-01-01,2023,1,S05,Treasure Coast,Youth Services,14,10,38375.5
+2023-01-01,2023,1,S05,Treasure Coast,Senior Employment,11,8,26591.76
+2023-01-01,2023,1,S05,Treasure Coast,Disability Services,17,12,46519.59
+2023-01-01,2023,1,S05,Treasure Coast,Financial Literacy,21,12,40296.97
+2023-02-01,2023,2,S05,Treasure Coast,Job Training,17,10,28717.35
+2023-02-01,2023,2,S05,Treasure Coast,Youth Services,16,10,38454.45
+2023-02-01,2023,2,S05,Treasure Coast,Senior Employment,15,8,24856.48
+2023-02-01,2023,2,S05,Treasure Coast,Disability Services,11,7,21590.97
+2023-02-01,2023,2,S05,Treasure Coast,Financial Literacy,7,5,17279.83
+2023-03-01,2023,3,S05,Treasure Coast,Job Training,14,8,30110.04
+2023-03-01,2023,3,S05,Treasure Coast,Youth Services,11,6,23294.36
+2023-03-01,2023,3,S05,Treasure Coast,Senior Employment,12,8,26502.6
+2023-03-01,2023,3,S05,Treasure Coast,Disability Services,15,9,31145.22
+2023-03-01,2023,3,S05,Treasure Coast,Financial Literacy,19,12,33939.27
+2023-04-01,2023,4,S05,Treasure Coast,Job Training,10,7,25309.49
+2023-04-01,2023,4,S05,Treasure Coast,Youth Services,9,5,17469.63
+2023-04-01,2023,4,S05,Treasure Coast,Senior Employment,8,5,19207.04
+2023-04-01,2023,4,S05,Treasure Coast,Disability Services,9,5,17068.67
+2023-04-01,2023,4,S05,Treasure Coast,Financial Literacy,8,4,15074.7
+2023-05-01,2023,5,S05,Treasure Coast,Job Training,21,14,39748.9
+2023-05-01,2023,5,S05,Treasure Coast,Youth Services,21,11,36074.5
+2023-05-01,2023,5,S05,Treasure Coast,Senior Employment,7,5,17289.23
+2023-05-01,2023,5,S05,Treasure Coast,Disability Services,13,7,20581.4
+2023-05-01,2023,5,S05,Treasure Coast,Financial Literacy,18,12,39358.04
+2023-06-01,2023,6,S05,Treasure Coast,Job Training,11,7,23521.43
+2023-06-01,2023,6,S05,Treasure Coast,Youth Services,15,9,32244.17
+2023-06-01,2023,6,S05,Treasure Coast,Senior Employment,16,10,28807.57
+2023-06-01,2023,6,S05,Treasure Coast,Disability Services,10,7,28251.5
+2023-06-01,2023,6,S05,Treasure Coast,Financial Literacy,7,4,12023.59
+2023-07-01,2023,7,S05,Treasure Coast,Job Training,17,13,36554.45
+2023-07-01,2023,7,S05,Treasure Coast,Youth Services,15,10,36533.28
+2023-07-01,2023,7,S05,Treasure Coast,Senior Employment,10,7,24189.35
+2023-07-01,2023,7,S05,Treasure Coast,Disability Services,19,11,45966.94
+2023-07-01,2023,7,S05,Treasure Coast,Financial Literacy,20,14,41362.56
+2023-08-01,2023,8,S05,Treasure Coast,Job Training,11,8,33394.03
+2023-08-01,2023,8,S05,Treasure Coast,Youth Services,16,11,46191.67
+2023-08-01,2023,8,S05,Treasure Coast,Senior Employment,16,12,35509.34
+2023-08-01,2023,8,S05,Treasure Coast,Disability Services,16,12,37144.28
+2023-08-01,2023,8,S05,Treasure Coast,Financial Literacy,14,8,29125.3
+2023-09-01,2023,9,S05,Treasure Coast,Job Training,11,7,24786.06
+2023-09-01,2023,9,S05,Treasure Coast,Youth Services,13,8,24180.41
+2023-09-01,2023,9,S05,Treasure Coast,Senior Employment,5,3,11701.68
+2023-09-01,2023,9,S05,Treasure Coast,Disability Services,10,7,22590.55
+2023-09-01,2023,9,S05,Treasure Coast,Financial Literacy,22,13,41669.68
+2023-10-01,2023,10,S05,Treasure Coast,Job Training,14,8,24369.61
+2023-10-01,2023,10,S05,Treasure Coast,Youth Services,17,9,33686.31
+2023-10-01,2023,10,S05,Treasure Coast,Senior Employment,13,7,25007.47
+2023-10-01,2023,10,S05,Treasure Coast,Disability Services,28,17,53383.34
+2023-10-01,2023,10,S05,Treasure Coast,Financial Literacy,11,8,32624.02
+2023-11-01,2023,11,S05,Treasure Coast,Job Training,10,7,24713.91
+2023-11-01,2023,11,S05,Treasure Coast,Youth Services,13,8,26893.61
+2023-11-01,2023,11,S05,Treasure Coast,Senior Employment,9,6,21298.27
+2023-11-01,2023,11,S05,Treasure Coast,Disability Services,19,12,42662.37
+2023-11-01,2023,11,S05,Treasure Coast,Financial Literacy,19,11,37060.69
+2023-12-01,2023,12,S05,Treasure Coast,Job Training,9,6,24298.31
+2023-12-01,2023,12,S05,Treasure Coast,Youth Services,10,7,24144.57
+2023-12-01,2023,12,S05,Treasure Coast,Senior Employment,8,5,18043.61
+2023-12-01,2023,12,S05,Treasure Coast,Disability Services,13,10,35609.56
+2023-12-01,2023,12,S05,Treasure Coast,Financial Literacy,9,6,18990.98
+2024-01-01,2024,1,S05,Treasure Coast,Job Training,19,10,35238.21
+2024-01-01,2024,1,S05,Treasure Coast,Youth Services,10,7,28651.31
+2024-01-01,2024,1,S05,Treasure Coast,Senior Employment,18,13,48079.61
+2024-01-01,2024,1,S05,Treasure Coast,Disability Services,16,11,35388.54
+2024-01-01,2024,1,S05,Treasure Coast,Financial Literacy,10,6,17471.29
+2024-02-01,2024,2,S05,Treasure Coast,Job Training,12,7,24362.83
+2024-02-01,2024,2,S05,Treasure Coast,Youth Services,14,8,33194.2
+2024-02-01,2024,2,S05,Treasure Coast,Senior Employment,22,17,58289.52
+2024-02-01,2024,2,S05,Treasure Coast,Disability Services,15,10,40469.5
+2024-02-01,2024,2,S05,Treasure Coast,Financial Literacy,12,8,30143.53
+2024-03-01,2024,3,S05,Treasure Coast,Job Training,12,9,27953.71
+2024-03-01,2024,3,S05,Treasure Coast,Youth Services,16,12,41644.39
+2024-03-01,2024,3,S05,Treasure Coast,Senior Employment,11,7,20345.68
+2024-03-01,2024,3,S05,Treasure Coast,Disability Services,20,15,56673.27
+2024-03-01,2024,3,S05,Treasure Coast,Financial Literacy,10,5,19867.23
+2024-04-01,2024,4,S05,Treasure Coast,Job Training,18,13,49979.94
+2024-04-01,2024,4,S05,Treasure Coast,Youth Services,11,7,21252.56
+2024-04-01,2024,4,S05,Treasure Coast,Senior Employment,16,10,39686.33
+2024-04-01,2024,4,S05,Treasure Coast,Disability Services,15,10,33511.29
+2024-04-01,2024,4,S05,Treasure Coast,Financial Literacy,11,8,31738.66
+2024-05-01,2024,5,S05,Treasure Coast,Job Training,14,8,29368.61
+2024-05-01,2024,5,S05,Treasure Coast,Youth Services,14,9,36880.35
+2024-05-01,2024,5,S05,Treasure Coast,Senior Employment,14,10,28689.42
+2024-05-01,2024,5,S05,Treasure Coast,Disability Services,9,6,16889.1
+2024-05-01,2024,5,S05,Treasure Coast,Financial Literacy,20,11,36985.34
+2024-06-01,2024,6,S05,Treasure Coast,Job Training,10,7,24377.77
+2024-06-01,2024,6,S05,Treasure Coast,Youth Services,19,14,43129.99
+2024-06-01,2024,6,S05,Treasure Coast,Senior Employment,20,11,43788.23
+2024-06-01,2024,6,S05,Treasure Coast,Disability Services,11,7,28398.74
+2024-06-01,2024,6,S05,Treasure Coast,Financial Literacy,11,8,27187.93
+2024-07-01,2024,7,S05,Treasure Coast,Job Training,12,8,30065.83
+2024-07-01,2024,7,S05,Treasure Coast,Youth Services,16,12,36889.02
+2024-07-01,2024,7,S05,Treasure Coast,Senior Employment,22,16,51176.28
+2024-07-01,2024,7,S05,Treasure Coast,Disability Services,12,8,28636.33
+2024-07-01,2024,7,S05,Treasure Coast,Financial Literacy,20,14,53957.79
+2024-08-01,2024,8,S05,Treasure Coast,Job Training,9,6,19787.77
+2024-08-01,2024,8,S05,Treasure Coast,Youth Services,12,7,26552.03
+2024-08-01,2024,8,S05,Treasure Coast,Senior Employment,22,15,43447.59
+2024-08-01,2024,8,S05,Treasure Coast,Disability Services,20,14,58390.6
+2024-08-01,2024,8,S05,Treasure Coast,Financial Literacy,16,10,28845.12
+2024-09-01,2024,9,S05,Treasure Coast,Job Training,19,13,36817.17
+2024-09-01,2024,9,S05,Treasure Coast,Youth Services,20,13,47268.14
+2024-09-01,2024,9,S05,Treasure Coast,Senior Employment,14,9,29123.84
+2024-09-01,2024,9,S05,Treasure Coast,Disability Services,14,9,28197.84
+2024-09-01,2024,9,S05,Treasure Coast,Financial Literacy,10,7,19813.71
+2024-10-01,2024,10,S05,Treasure Coast,Job Training,17,10,39444.67
+2024-10-01,2024,10,S05,Treasure Coast,Youth Services,12,9,33245.42
+2024-10-01,2024,10,S05,Treasure Coast,Senior Employment,21,15,59565.36
+2024-10-01,2024,10,S05,Treasure Coast,Disability Services,16,10,29154.41
+2024-10-01,2024,10,S05,Treasure Coast,Financial Literacy,18,14,42789.45
+2024-11-01,2024,11,S05,Treasure Coast,Job Training,16,11,41928.81
+2024-11-01,2024,11,S05,Treasure Coast,Youth Services,20,12,45143.66
+2024-11-01,2024,11,S05,Treasure Coast,Senior Employment,15,10,33704.1
+2024-11-01,2024,11,S05,Treasure Coast,Disability Services,14,9,25533.33
+2024-11-01,2024,11,S05,Treasure Coast,Financial Literacy,24,15,61710.61
+2024-12-01,2024,12,S05,Treasure Coast,Job Training,18,12,36727.02
+2024-12-01,2024,12,S05,Treasure Coast,Youth Services,11,8,30513.96
+2024-12-01,2024,12,S05,Treasure Coast,Senior Employment,15,8,26592.45
+2024-12-01,2024,12,S05,Treasure Coast,Disability Services,15,8,33484.9
+2024-12-01,2024,12,S05,Treasure Coast,Financial Literacy,12,8,23860.92
+2023-01-01,2023,1,S06,Treasure Coast,Job Training,14,8,29745.51
+2023-01-01,2023,1,S06,Treasure Coast,Youth Services,20,12,48758.77
+2023-01-01,2023,1,S06,Treasure Coast,Senior Employment,11,7,25444.01
+2023-01-01,2023,1,S06,Treasure Coast,Disability Services,13,7,26893.95
+2023-01-01,2023,1,S06,Treasure Coast,Financial Literacy,17,12,37694.45
+2023-02-01,2023,2,S06,Treasure Coast,Job Training,14,8,23102.48
+2023-02-01,2023,2,S06,Treasure Coast,Youth Services,12,9,36499.07
+2023-02-01,2023,2,S06,Treasure Coast,Senior Employment,20,13,40393.36
+2023-02-01,2023,2,S06,Treasure Coast,Disability Services,18,11,34392.12
+2023-02-01,2023,2,S06,Treasure Coast,Financial Literacy,14,8,27475.54
+2023-03-01,2023,3,S06,Treasure Coast,Job Training,19,14,43039.09
+2023-03-01,2023,3,S06,Treasure Coast,Youth Services,10,6,22345.45
+2023-03-01,2023,3,S06,Treasure Coast,Senior Employment,22,13,46426.61
+2023-03-01,2023,3,S06,Treasure Coast,Disability Services,8,4,13420.76
+2023-03-01,2023,3,S06,Treasure Coast,Financial Literacy,8,5,18271.74
+2023-04-01,2023,4,S06,Treasure Coast,Job Training,16,9,28867.59
+2023-04-01,2023,4,S06,Treasure Coast,Youth Services,17,10,41532.61
+2023-04-01,2023,4,S06,Treasure Coast,Senior Employment,15,9,27846.67
+2023-04-01,2023,4,S06,Treasure Coast,Disability Services,17,12,42884.26
+2023-04-01,2023,4,S06,Treasure Coast,Financial Literacy,15,9,29644.88
+2023-05-01,2023,5,S06,Treasure Coast,Job Training,19,13,49188.04
+2023-05-01,2023,5,S06,Treasure Coast,Youth Services,13,9,34411.56
+2023-05-01,2023,5,S06,Treasure Coast,Senior Employment,14,9,36240.41
+2023-05-01,2023,5,S06,Treasure Coast,Disability Services,19,12,41407.33
+2023-05-01,2023,5,S06,Treasure Coast,Financial Literacy,13,8,23476.05
+2023-06-01,2023,6,S06,Treasure Coast,Job Training,18,11,37409.85
+2023-06-01,2023,6,S06,Treasure Coast,Youth Services,20,12,49378.52
+2023-06-01,2023,6,S06,Treasure Coast,Senior Employment,10,5,15659.29
+2023-06-01,2023,6,S06,Treasure Coast,Disability Services,17,12,37832.06
+2023-06-01,2023,6,S06,Treasure Coast,Financial Literacy,11,6,17720.85
+2023-07-01,2023,7,S06,Treasure Coast,Job Training,14,10,39446.32
+2023-07-01,2023,7,S06,Treasure Coast,Youth Services,14,9,25897.92
+2023-07-01,2023,7,S06,Treasure Coast,Senior Employment,15,8,31576.68
+2023-07-01,2023,7,S06,Treasure Coast,Disability Services,12,9,29240.38
+2023-07-01,2023,7,S06,Treasure Coast,Financial Literacy,18,9,34772.37
+2023-08-01,2023,8,S06,Treasure Coast,Job Training,21,12,48782.58
+2023-08-01,2023,8,S06,Treasure Coast,Youth Services,10,6,17498.83
+2023-08-01,2023,8,S06,Treasure Coast,Senior Employment,11,8,30324.43
+2023-08-01,2023,8,S06,Treasure Coast,Disability Services,15,9,26702.49
+2023-08-01,2023,8,S06,Treasure Coast,Financial Literacy,13,7,23838.34
+2023-09-01,2023,9,S06,Treasure Coast,Job Training,13,9,32126.02
+2023-09-01,2023,9,S06,Treasure Coast,Youth Services,12,7,20294.9
+2023-09-01,2023,9,S06,Treasure Coast,Senior Employment,17,13,37327.73
+2023-09-01,2023,9,S06,Treasure Coast,Disability Services,14,9,27937.14
+2023-09-01,2023,9,S06,Treasure Coast,Financial Literacy,21,14,46317.32
+2023-10-01,2023,10,S06,Treasure Coast,Job Training,11,6,20396.46
+2023-10-01,2023,10,S06,Treasure Coast,Youth Services,13,10,37334.58
+2023-10-01,2023,10,S06,Treasure Coast,Senior Employment,14,9,25963.69
+2023-10-01,2023,10,S06,Treasure Coast,Disability Services,8,5,19780.97
+2023-10-01,2023,10,S06,Treasure Coast,Financial Literacy,12,9,35744.98
+2023-11-01,2023,11,S06,Treasure Coast,Job Training,16,9,25402.34
+2023-11-01,2023,11,S06,Treasure Coast,Youth Services,8,5,14448.0
+2023-11-01,2023,11,S06,Treasure Coast,Senior Employment,9,6,21972.63
+2023-11-01,2023,11,S06,Treasure Coast,Disability Services,15,9,26418.29
+2023-11-01,2023,11,S06,Treasure Coast,Financial Literacy,11,8,29653.79
+2023-12-01,2023,12,S06,Treasure Coast,Job Training,20,11,46150.14
+2023-12-01,2023,12,S06,Treasure Coast,Youth Services,8,4,13395.09
+2023-12-01,2023,12,S06,Treasure Coast,Senior Employment,16,9,29414.02
+2023-12-01,2023,12,S06,Treasure Coast,Disability Services,18,10,39354.23
+2023-12-01,2023,12,S06,Treasure Coast,Financial Literacy,9,5,20162.44
+2024-01-01,2024,1,S06,Treasure Coast,Job Training,9,6,19121.85
+2024-01-01,2024,1,S06,Treasure Coast,Youth Services,16,10,29567.62
+2024-01-01,2024,1,S06,Treasure Coast,Senior Employment,20,11,31622.62
+2024-01-01,2024,1,S06,Treasure Coast,Disability Services,16,10,37515.46
+2024-01-01,2024,1,S06,Treasure Coast,Financial Literacy,7,3,12045.57
+2024-02-01,2024,2,S06,Treasure Coast,Job Training,19,10,31826.37
+2024-02-01,2024,2,S06,Treasure Coast,Youth Services,12,7,20315.01
+2024-02-01,2024,2,S06,Treasure Coast,Senior Employment,18,11,32766.07
+2024-02-01,2024,2,S06,Treasure Coast,Disability Services,19,14,48911.24
+2024-02-01,2024,2,S06,Treasure Coast,Financial Literacy,12,6,21749.29
+2024-03-01,2024,3,S06,Treasure Coast,Job Training,9,5,18634.89
+2024-03-01,2024,3,S06,Treasure Coast,Youth Services,10,6,19247.78
+2024-03-01,2024,3,S06,Treasure Coast,Senior Employment,20,11,38416.63
+2024-03-01,2024,3,S06,Treasure Coast,Disability Services,16,11,31983.75
+2024-03-01,2024,3,S06,Treasure Coast,Financial Literacy,20,12,34189.47
+2024-04-01,2024,4,S06,Treasure Coast,Job Training,17,11,44777.52
+2024-04-01,2024,4,S06,Treasure Coast,Youth Services,10,5,15563.6
+2024-04-01,2024,4,S06,Treasure Coast,Senior Employment,12,8,24689.85
+2024-04-01,2024,4,S06,Treasure Coast,Disability Services,17,11,45181.55
+2024-04-01,2024,4,S06,Treasure Coast,Financial Literacy,20,12,40281.04
+2024-05-01,2024,5,S06,Treasure Coast,Job Training,5,3,9377.67
+2024-05-01,2024,5,S06,Treasure Coast,Youth Services,11,6,17897.24
+2024-05-01,2024,5,S06,Treasure Coast,Senior Employment,22,13,40882.04
+2024-05-01,2024,5,S06,Treasure Coast,Disability Services,22,16,47146.59
+2024-05-01,2024,5,S06,Treasure Coast,Financial Literacy,19,11,39666.55
+2024-06-01,2024,6,S06,Treasure Coast,Job Training,11,6,24186.3
+2024-06-01,2024,6,S06,Treasure Coast,Youth Services,12,6,19545.78
+2024-06-01,2024,6,S06,Treasure Coast,Senior Employment,20,13,36971.47
+2024-06-01,2024,6,S06,Treasure Coast,Disability Services,12,7,28200.46
+2024-06-01,2024,6,S06,Treasure Coast,Financial Literacy,14,9,26990.55
+2024-07-01,2024,7,S06,Treasure Coast,Job Training,11,6,22504.67
+2024-07-01,2024,7,S06,Treasure Coast,Youth Services,15,11,32583.4
+2024-07-01,2024,7,S06,Treasure Coast,Senior Employment,12,7,27540.97
+2024-07-01,2024,7,S06,Treasure Coast,Disability Services,18,12,34600.34
+2024-07-01,2024,7,S06,Treasure Coast,Financial Literacy,16,11,34885.72
+2024-08-01,2024,8,S06,Treasure Coast,Job Training,17,11,38308.51
+2024-08-01,2024,8,S06,Treasure Coast,Youth Services,14,10,28072.98
+2024-08-01,2024,8,S06,Treasure Coast,Senior Employment,22,15,59968.12
+2024-08-01,2024,8,S06,Treasure Coast,Disability Services,15,8,24182.68
+2024-08-01,2024,8,S06,Treasure Coast,Financial Literacy,20,13,42431.35
+2024-09-01,2024,9,S06,Treasure Coast,Job Training,18,12,40210.47
+2024-09-01,2024,9,S06,Treasure Coast,Youth Services,25,19,53401.93
+2024-09-01,2024,9,S06,Treasure Coast,Senior Employment,16,11,44736.64
+2024-09-01,2024,9,S06,Treasure Coast,Disability Services,15,11,34219.8
+2024-09-01,2024,9,S06,Treasure Coast,Financial Literacy,15,10,33319.39
+2024-10-01,2024,10,S06,Treasure Coast,Job Training,10,7,27361.79
+2024-10-01,2024,10,S06,Treasure Coast,Youth Services,15,8,27340.87
+2024-10-01,2024,10,S06,Treasure Coast,Senior Employment,19,13,49972.67
+2024-10-01,2024,10,S06,Treasure Coast,Disability Services,11,7,21659.81
+2024-10-01,2024,10,S06,Treasure Coast,Financial Literacy,20,14,49941.45
+2024-11-01,2024,11,S06,Treasure Coast,Job Training,14,9,30121.08
+2024-11-01,2024,11,S06,Treasure Coast,Youth Services,12,9,27111.5
+2024-11-01,2024,11,S06,Treasure Coast,Senior Employment,16,11,38894.73
+2024-11-01,2024,11,S06,Treasure Coast,Disability Services,16,12,46398.46
+2024-11-01,2024,11,S06,Treasure Coast,Financial Literacy,14,8,23831.17
+2024-12-01,2024,12,S06,Treasure Coast,Job Training,9,5,18819.59
+2024-12-01,2024,12,S06,Treasure Coast,Youth Services,7,4,11553.74
+2024-12-01,2024,12,S06,Treasure Coast,Senior Employment,11,8,32206.23
+2024-12-01,2024,12,S06,Treasure Coast,Disability Services,20,12,34883.41
+2024-12-01,2024,12,S06,Treasure Coast,Financial Literacy,18,12,37764.31
+2023-01-01,2023,1,S07,Treasure Coast,Job Training,15,10,41246.43
+2023-01-01,2023,1,S07,Treasure Coast,Youth Services,11,7,23450.79
+2023-01-01,2023,1,S07,Treasure Coast,Senior Employment,14,9,35944.48
+2023-01-01,2023,1,S07,Treasure Coast,Disability Services,16,10,28242.2
+2023-01-01,2023,1,S07,Treasure Coast,Financial Literacy,17,11,43099.64
+2023-02-01,2023,2,S07,Treasure Coast,Job Training,5,3,9365.69
+2023-02-01,2023,2,S07,Treasure Coast,Youth Services,21,13,40659.94
+2023-02-01,2023,2,S07,Treasure Coast,Senior Employment,18,10,33277.91
+2023-02-01,2023,2,S07,Treasure Coast,Disability Services,14,10,33327.93
+2023-02-01,2023,2,S07,Treasure Coast,Financial Literacy,20,14,57432.98
+2023-03-01,2023,3,S07,Treasure Coast,Job Training,20,12,41612.01
+2023-03-01,2023,3,S07,Treasure Coast,Youth Services,13,10,29573.67
+2023-03-01,2023,3,S07,Treasure Coast,Senior Employment,13,10,41504.12
+2023-03-01,2023,3,S07,Treasure Coast,Disability Services,14,10,37759.98
+2023-03-01,2023,3,S07,Treasure Coast,Financial Literacy,12,9,32228.96
+2023-04-01,2023,4,S07,Treasure Coast,Job Training,15,10,34154.99
+2023-04-01,2023,4,S07,Treasure Coast,Youth Services,12,7,21538.98
+2023-04-01,2023,4,S07,Treasure Coast,Senior Employment,14,9,30091.08
+2023-04-01,2023,4,S07,Treasure Coast,Disability Services,13,8,33463.06
+2023-04-01,2023,4,S07,Treasure Coast,Financial Literacy,13,7,26002.73
+2023-05-01,2023,5,S07,Treasure Coast,Job Training,15,10,30204.34
+2023-05-01,2023,5,S07,Treasure Coast,Youth Services,13,7,26300.9
+2023-05-01,2023,5,S07,Treasure Coast,Senior Employment,12,8,29631.68
+2023-05-01,2023,5,S07,Treasure Coast,Disability Services,15,11,40470.24
+2023-05-01,2023,5,S07,Treasure Coast,Financial Literacy,16,11,42575.6
+2023-06-01,2023,6,S07,Treasure Coast,Job Training,17,10,41655.58
+2023-06-01,2023,6,S07,Treasure Coast,Youth Services,21,15,49100.33
+2023-06-01,2023,6,S07,Treasure Coast,Senior Employment,25,16,54388.27
+2023-06-01,2023,6,S07,Treasure Coast,Disability Services,12,6,22819.96
+2023-06-01,2023,6,S07,Treasure Coast,Financial Literacy,19,11,38762.54
+2023-07-01,2023,7,S07,Treasure Coast,Job Training,8,4,11413.54
+2023-07-01,2023,7,S07,Treasure Coast,Youth Services,17,12,42925.43
+2023-07-01,2023,7,S07,Treasure Coast,Senior Employment,13,8,29168.85
+2023-07-01,2023,7,S07,Treasure Coast,Disability Services,12,8,27330.45
+2023-07-01,2023,7,S07,Treasure Coast,Financial Literacy,13,9,25778.59
+2023-08-01,2023,8,S07,Treasure Coast,Job Training,12,6,18781.57
+2023-08-01,2023,8,S07,Treasure Coast,Youth Services,17,9,34263.03
+2023-08-01,2023,8,S07,Treasure Coast,Senior Employment,13,10,36390.21
+2023-08-01,2023,8,S07,Treasure Coast,Disability Services,10,7,25286.27
+2023-08-01,2023,8,S07,Treasure Coast,Financial Literacy,16,10,38285.16
+2023-09-01,2023,9,S07,Treasure Coast,Job Training,21,15,45604.34
+2023-09-01,2023,9,S07,Treasure Coast,Youth Services,10,5,18444.97
+2023-09-01,2023,9,S07,Treasure Coast,Senior Employment,11,8,27594.42
+2023-09-01,2023,9,S07,Treasure Coast,Disability Services,10,7,25701.39
+2023-09-01,2023,9,S07,Treasure Coast,Financial Literacy,4,2,6148.19
+2023-10-01,2023,10,S07,Treasure Coast,Job Training,11,6,24430.41
+2023-10-01,2023,10,S07,Treasure Coast,Youth Services,14,9,33150.78
+2023-10-01,2023,10,S07,Treasure Coast,Senior Employment,13,9,32647.38
+2023-10-01,2023,10,S07,Treasure Coast,Disability Services,12,7,23668.94
+2023-10-01,2023,10,S07,Treasure Coast,Financial Literacy,10,6,22923.92
+2023-11-01,2023,11,S07,Treasure Coast,Job Training,11,8,32599.59
+2023-11-01,2023,11,S07,Treasure Coast,Youth Services,20,11,30899.92
+2023-11-01,2023,11,S07,Treasure Coast,Senior Employment,10,7,28690.62
+2023-11-01,2023,11,S07,Treasure Coast,Disability Services,12,8,26695.22
+2023-11-01,2023,11,S07,Treasure Coast,Financial Literacy,17,10,35312.05
+2023-12-01,2023,12,S07,Treasure Coast,Job Training,12,8,23786.12
+2023-12-01,2023,12,S07,Treasure Coast,Youth Services,12,7,22152.78
+2023-12-01,2023,12,S07,Treasure Coast,Senior Employment,19,10,33464.05
+2023-12-01,2023,12,S07,Treasure Coast,Disability Services,16,10,28794.01
+2023-12-01,2023,12,S07,Treasure Coast,Financial Literacy,15,9,30494.93
+2024-01-01,2024,1,S07,Treasure Coast,Job Training,8,4,13897.45
+2024-01-01,2024,1,S07,Treasure Coast,Youth Services,7,4,14090.91
+2024-01-01,2024,1,S07,Treasure Coast,Senior Employment,20,11,41152.98
+2024-01-01,2024,1,S07,Treasure Coast,Disability Services,12,7,22631.4
+2024-01-01,2024,1,S07,Treasure Coast,Financial Literacy,16,10,34754.66
+2024-02-01,2024,2,S07,Treasure Coast,Job Training,16,10,34353.73
+2024-02-01,2024,2,S07,Treasure Coast,Youth Services,11,7,28422.71
+2024-02-01,2024,2,S07,Treasure Coast,Senior Employment,12,8,31121.16
+2024-02-01,2024,2,S07,Treasure Coast,Disability Services,16,12,43870.36
+2024-02-01,2024,2,S07,Treasure Coast,Financial Literacy,18,12,37931.0
+2024-03-01,2024,3,S07,Treasure Coast,Job Training,11,7,26296.11
+2024-03-01,2024,3,S07,Treasure Coast,Youth Services,11,7,25450.21
+2024-03-01,2024,3,S07,Treasure Coast,Senior Employment,11,8,25311.06
+2024-03-01,2024,3,S07,Treasure Coast,Disability Services,12,8,30285.92
+2024-03-01,2024,3,S07,Treasure Coast,Financial Literacy,17,11,34724.19
+2024-04-01,2024,4,S07,Treasure Coast,Job Training,21,15,45319.29
+2024-04-01,2024,4,S07,Treasure Coast,Youth Services,17,10,37434.12
+2024-04-01,2024,4,S07,Treasure Coast,Senior Employment,10,6,17375.01
+2024-04-01,2024,4,S07,Treasure Coast,Disability Services,15,10,31325.92
+2024-04-01,2024,4,S07,Treasure Coast,Financial Literacy,12,7,23304.28
+2024-05-01,2024,5,S07,Treasure Coast,Job Training,19,10,32597.01
+2024-05-01,2024,5,S07,Treasure Coast,Youth Services,14,9,35152.89
+2024-05-01,2024,5,S07,Treasure Coast,Senior Employment,14,11,38659.78
+2024-05-01,2024,5,S07,Treasure Coast,Disability Services,14,8,27245.79
+2024-05-01,2024,5,S07,Treasure Coast,Financial Literacy,12,7,28287.07
+2024-06-01,2024,6,S07,Treasure Coast,Job Training,12,8,27184.43
+2024-06-01,2024,6,S07,Treasure Coast,Youth Services,11,7,23037.38
+2024-06-01,2024,6,S07,Treasure Coast,Senior Employment,10,7,23915.07
+2024-06-01,2024,6,S07,Treasure Coast,Disability Services,16,12,42788.51
+2024-06-01,2024,6,S07,Treasure Coast,Financial Literacy,15,10,29561.7
+2024-07-01,2024,7,S07,Treasure Coast,Job Training,10,7,24942.87
+2024-07-01,2024,7,S07,Treasure Coast,Youth Services,16,10,37522.79
+2024-07-01,2024,7,S07,Treasure Coast,Senior Employment,18,11,33278.71
+2024-07-01,2024,7,S07,Treasure Coast,Disability Services,14,9,30021.28
+2024-07-01,2024,7,S07,Treasure Coast,Financial Literacy,16,8,27446.96
+2024-08-01,2024,8,S07,Treasure Coast,Job Training,18,12,42280.16
+2024-08-01,2024,8,S07,Treasure Coast,Youth Services,15,8,26690.03
+2024-08-01,2024,8,S07,Treasure Coast,Senior Employment,23,16,56756.07
+2024-08-01,2024,8,S07,Treasure Coast,Disability Services,19,10,38684.44
+2024-08-01,2024,8,S07,Treasure Coast,Financial Literacy,18,13,52933.72
+2024-09-01,2024,9,S07,Treasure Coast,Job Training,15,11,35401.83
+2024-09-01,2024,9,S07,Treasure Coast,Youth Services,12,9,34580.55
+2024-09-01,2024,9,S07,Treasure Coast,Senior Employment,17,12,47340.28
+2024-09-01,2024,9,S07,Treasure Coast,Disability Services,12,7,22254.68
+2024-09-01,2024,9,S07,Treasure Coast,Financial Literacy,14,9,30702.7
+2024-10-01,2024,10,S07,Treasure Coast,Job Training,17,10,36777.27
+2024-10-01,2024,10,S07,Treasure Coast,Youth Services,17,11,41927.33
+2024-10-01,2024,10,S07,Treasure Coast,Senior Employment,10,7,29386.75
+2024-10-01,2024,10,S07,Treasure Coast,Disability Services,10,6,21217.5
+2024-10-01,2024,10,S07,Treasure Coast,Financial Literacy,11,7,22891.37
+2024-11-01,2024,11,S07,Treasure Coast,Job Training,10,5,20653.1
+2024-11-01,2024,11,S07,Treasure Coast,Youth Services,16,10,40646.41
+2024-11-01,2024,11,S07,Treasure Coast,Senior Employment,15,10,38265.9
+2024-11-01,2024,11,S07,Treasure Coast,Disability Services,16,9,32837.17
+2024-11-01,2024,11,S07,Treasure Coast,Financial Literacy,15,9,31686.18
+2024-12-01,2024,12,S07,Treasure Coast,Job Training,19,12,47420.62
+2024-12-01,2024,12,S07,Treasure Coast,Youth Services,17,12,41887.33
+2024-12-01,2024,12,S07,Treasure Coast,Senior Employment,23,13,42327.13
+2024-12-01,2024,12,S07,Treasure Coast,Disability Services,3,1,4117.43
+2024-12-01,2024,12,S07,Treasure Coast,Financial Literacy,20,13,36507.99
+2023-01-01,2023,1,S08,Manasota,Job Training,10,7,21027.33
+2023-01-01,2023,1,S08,Manasota,Youth Services,19,11,33228.89
+2023-01-01,2023,1,S08,Manasota,Senior Employment,15,10,32879.65
+2023-01-01,2023,1,S08,Manasota,Disability Services,15,11,42332.12
+2023-01-01,2023,1,S08,Manasota,Financial Literacy,15,10,32782.62
+2023-02-01,2023,2,S08,Manasota,Job Training,21,11,44428.9
+2023-02-01,2023,2,S08,Manasota,Youth Services,11,6,21648.5
+2023-02-01,2023,2,S08,Manasota,Senior Employment,14,10,32431.53
+2023-02-01,2023,2,S08,Manasota,Disability Services,17,12,44752.01
+2023-02-01,2023,2,S08,Manasota,Financial Literacy,16,11,32028.87
+2023-03-01,2023,3,S08,Manasota,Job Training,19,11,39682.56
+2023-03-01,2023,3,S08,Manasota,Youth Services,17,13,54119.66
+2023-03-01,2023,3,S08,Manasota,Senior Employment,15,11,35856.7
+2023-03-01,2023,3,S08,Manasota,Disability Services,14,11,45076.86
+2023-03-01,2023,3,S08,Manasota,Financial Literacy,11,6,20507.01
+2023-04-01,2023,4,S08,Manasota,Job Training,12,8,30940.29
+2023-04-01,2023,4,S08,Manasota,Youth Services,3,2,7092.62
+2023-04-01,2023,4,S08,Manasota,Senior Employment,15,9,33243.26
+2023-04-01,2023,4,S08,Manasota,Disability Services,14,10,35526.74
+2023-04-01,2023,4,S08,Manasota,Financial Literacy,14,10,40727.02
+2023-05-01,2023,5,S08,Manasota,Job Training,10,7,20689.25
+2023-05-01,2023,5,S08,Manasota,Youth Services,18,13,47538.42
+2023-05-01,2023,5,S08,Manasota,Senior Employment,10,7,25811.76
+2023-05-01,2023,5,S08,Manasota,Disability Services,13,8,28065.71
+2023-05-01,2023,5,S08,Manasota,Financial Literacy,10,7,21711.44
+2023-06-01,2023,6,S08,Manasota,Job Training,14,10,35900.78
+2023-06-01,2023,6,S08,Manasota,Youth Services,16,10,33382.0
+2023-06-01,2023,6,S08,Manasota,Senior Employment,13,8,27276.45
+2023-06-01,2023,6,S08,Manasota,Disability Services,7,4,14495.29
+2023-06-01,2023,6,S08,Manasota,Financial Literacy,12,9,37238.93
+2023-07-01,2023,7,S08,Manasota,Job Training,15,11,41670.28
+2023-07-01,2023,7,S08,Manasota,Youth Services,12,7,21243.9
+2023-07-01,2023,7,S08,Manasota,Senior Employment,14,10,39081.57
+2023-07-01,2023,7,S08,Manasota,Disability Services,17,12,45136.84
+2023-07-01,2023,7,S08,Manasota,Financial Literacy,20,13,36621.81
+2023-08-01,2023,8,S08,Manasota,Job Training,12,8,31555.41
+2023-08-01,2023,8,S08,Manasota,Youth Services,10,6,17813.78
+2023-08-01,2023,8,S08,Manasota,Senior Employment,14,9,25594.85
+2023-08-01,2023,8,S08,Manasota,Disability Services,8,5,14202.91
+2023-08-01,2023,8,S08,Manasota,Financial Literacy,15,10,29836.59
+2023-09-01,2023,9,S08,Manasota,Job Training,15,8,31979.89
+2023-09-01,2023,9,S08,Manasota,Youth Services,15,11,41002.48
+2023-09-01,2023,9,S08,Manasota,Senior Employment,12,9,25415.74
+2023-09-01,2023,9,S08,Manasota,Disability Services,16,12,38381.78
+2023-09-01,2023,9,S08,Manasota,Financial Literacy,13,8,27231.74
+2023-10-01,2023,10,S08,Manasota,Job Training,13,9,28943.32
+2023-10-01,2023,10,S08,Manasota,Youth Services,10,7,28431.09
+2023-10-01,2023,10,S08,Manasota,Senior Employment,14,8,27245.29
+2023-10-01,2023,10,S08,Manasota,Disability Services,11,7,27562.07
+2023-10-01,2023,10,S08,Manasota,Financial Literacy,17,11,37380.51
+2023-11-01,2023,11,S08,Manasota,Job Training,11,7,24723.71
+2023-11-01,2023,11,S08,Manasota,Youth Services,16,9,29761.9
+2023-11-01,2023,11,S08,Manasota,Senior Employment,11,7,23087.14
+2023-11-01,2023,11,S08,Manasota,Disability Services,12,9,25678.17
+2023-11-01,2023,11,S08,Manasota,Financial Literacy,22,17,52351.9
+2023-12-01,2023,12,S08,Manasota,Job Training,13,10,39516.17
+2023-12-01,2023,12,S08,Manasota,Youth Services,16,11,41995.99
+2023-12-01,2023,12,S08,Manasota,Senior Employment,13,7,22219.91
+2023-12-01,2023,12,S08,Manasota,Disability Services,7,4,12963.67
+2023-12-01,2023,12,S08,Manasota,Financial Literacy,10,5,17172.99
+2024-01-01,2024,1,S08,Manasota,Job Training,11,8,28169.54
+2024-01-01,2024,1,S08,Manasota,Youth Services,18,11,38179.21
+2024-01-01,2024,1,S08,Manasota,Senior Employment,10,7,28806.43
+2024-01-01,2024,1,S08,Manasota,Disability Services,7,5,14582.13
+2024-01-01,2024,1,S08,Manasota,Financial Literacy,10,7,28534.49
+2024-02-01,2024,2,S08,Manasota,Job Training,16,11,40992.05
+2024-02-01,2024,2,S08,Manasota,Youth Services,19,12,37580.87
+2024-02-01,2024,2,S08,Manasota,Senior Employment,18,11,43149.97
+2024-02-01,2024,2,S08,Manasota,Disability Services,10,6,24390.1
+2024-02-01,2024,2,S08,Manasota,Financial Literacy,8,5,16484.42
+2024-03-01,2024,3,S08,Manasota,Job Training,12,7,22356.84
+2024-03-01,2024,3,S08,Manasota,Youth Services,7,4,11720.31
+2024-03-01,2024,3,S08,Manasota,Senior Employment,14,9,33531.01
+2024-03-01,2024,3,S08,Manasota,Disability Services,17,12,44999.51
+2024-03-01,2024,3,S08,Manasota,Financial Literacy,20,15,60181.26
+2024-04-01,2024,4,S08,Manasota,Job Training,14,10,38012.31
+2024-04-01,2024,4,S08,Manasota,Youth Services,16,9,37407.41
+2024-04-01,2024,4,S08,Manasota,Senior Employment,12,8,30620.85
+2024-04-01,2024,4,S08,Manasota,Disability Services,11,7,19813.53
+2024-04-01,2024,4,S08,Manasota,Financial Literacy,18,13,51007.87
+2024-05-01,2024,5,S08,Manasota,Job Training,17,11,37650.37
+2024-05-01,2024,5,S08,Manasota,Youth Services,12,8,31726.5
+2024-05-01,2024,5,S08,Manasota,Senior Employment,8,6,21737.26
+2024-05-01,2024,5,S08,Manasota,Disability Services,15,9,34255.67
+2024-05-01,2024,5,S08,Manasota,Financial Literacy,8,5,20399.32
+2024-06-01,2024,6,S08,Manasota,Job Training,15,10,29278.59
+2024-06-01,2024,6,S08,Manasota,Youth Services,10,6,17510.07
+2024-06-01,2024,6,S08,Manasota,Senior Employment,18,10,37431.27
+2024-06-01,2024,6,S08,Manasota,Disability Services,21,15,53798.09
+2024-06-01,2024,6,S08,Manasota,Financial Literacy,12,8,26001.74
+2024-07-01,2024,7,S08,Manasota,Job Training,16,9,29912.03
+2024-07-01,2024,7,S08,Manasota,Youth Services,14,8,32529.99
+2024-07-01,2024,7,S08,Manasota,Senior Employment,16,11,34749.8
+2024-07-01,2024,7,S08,Manasota,Disability Services,8,6,19324.85
+2024-07-01,2024,7,S08,Manasota,Financial Literacy,18,11,31351.46
+2024-08-01,2024,8,S08,Manasota,Job Training,16,9,34688.53
+2024-08-01,2024,8,S08,Manasota,Youth Services,18,11,44692.61
+2024-08-01,2024,8,S08,Manasota,Senior Employment,17,9,28862.88
+2024-08-01,2024,8,S08,Manasota,Disability Services,15,9,31845.16
+2024-08-01,2024,8,S08,Manasota,Financial Literacy,10,6,21620.45
+2024-09-01,2024,9,S08,Manasota,Job Training,9,5,19657.49
+2024-09-01,2024,9,S08,Manasota,Youth Services,18,12,37690.07
+2024-09-01,2024,9,S08,Manasota,Senior Employment,16,12,45712.77
+2024-09-01,2024,9,S08,Manasota,Disability Services,16,12,44854.17
+2024-09-01,2024,9,S08,Manasota,Financial Literacy,18,11,33068.44
+2024-10-01,2024,10,S08,Manasota,Job Training,15,11,40212.61
+2024-10-01,2024,10,S08,Manasota,Youth Services,18,13,47594.55
+2024-10-01,2024,10,S08,Manasota,Senior Employment,17,11,40564.17
+2024-10-01,2024,10,S08,Manasota,Disability Services,19,12,37604.99
+2024-10-01,2024,10,S08,Manasota,Financial Literacy,14,10,39654.81
+2024-11-01,2024,11,S08,Manasota,Job Training,14,8,24784.77
+2024-11-01,2024,11,S08,Manasota,Youth Services,10,6,20640.99
+2024-11-01,2024,11,S08,Manasota,Senior Employment,9,5,17731.3
+2024-11-01,2024,11,S08,Manasota,Disability Services,16,10,33340.88
+2024-11-01,2024,11,S08,Manasota,Financial Literacy,8,5,17276.71
+2024-12-01,2024,12,S08,Manasota,Job Training,18,12,34949.43
+2024-12-01,2024,12,S08,Manasota,Youth Services,17,9,36061.84
+2024-12-01,2024,12,S08,Manasota,Senior Employment,16,8,28417.87
+2024-12-01,2024,12,S08,Manasota,Disability Services,22,17,50847.54
+2024-12-01,2024,12,S08,Manasota,Financial Literacy,16,10,29274.93
+2023-01-01,2023,1,S09,Manasota,Job Training,15,10,38656.96
+2023-01-01,2023,1,S09,Manasota,Youth Services,17,10,33659.3
+2023-01-01,2023,1,S09,Manasota,Senior Employment,7,4,12462.21
+2023-01-01,2023,1,S09,Manasota,Disability Services,14,7,27246.02
+2023-01-01,2023,1,S09,Manasota,Financial Literacy,10,6,19612.55
+2023-02-01,2023,2,S09,Manasota,Job Training,15,8,33257.28
+2023-02-01,2023,2,S09,Manasota,Youth Services,17,12,40097.74
+2023-02-01,2023,2,S09,Manasota,Senior Employment,20,12,42862.47
+2023-02-01,2023,2,S09,Manasota,Disability Services,12,8,31991.16
+2023-02-01,2023,2,S09,Manasota,Financial Literacy,14,8,26977.17
+2023-03-01,2023,3,S09,Manasota,Job Training,14,8,24882.02
+2023-03-01,2023,3,S09,Manasota,Youth Services,13,8,31287.44
+2023-03-01,2023,3,S09,Manasota,Senior Employment,12,8,25000.4
+2023-03-01,2023,3,S09,Manasota,Disability Services,17,11,43270.67
+2023-03-01,2023,3,S09,Manasota,Financial Literacy,11,7,25569.91
+2023-04-01,2023,4,S09,Manasota,Job Training,15,9,32096.96
+2023-04-01,2023,4,S09,Manasota,Youth Services,7,5,14417.7
+2023-04-01,2023,4,S09,Manasota,Senior Employment,10,5,15976.83
+2023-04-01,2023,4,S09,Manasota,Disability Services,15,11,38591.26
+2023-04-01,2023,4,S09,Manasota,Financial Literacy,14,9,32866.99
+2023-05-01,2023,5,S09,Manasota,Job Training,20,12,33659.62
+2023-05-01,2023,5,S09,Manasota,Youth Services,15,10,39259.27
+2023-05-01,2023,5,S09,Manasota,Senior Employment,14,10,31776.04
+2023-05-01,2023,5,S09,Manasota,Disability Services,17,10,40671.87
+2023-05-01,2023,5,S09,Manasota,Financial Literacy,10,7,26395.57
+2023-06-01,2023,6,S09,Manasota,Job Training,18,11,40950.35
+2023-06-01,2023,6,S09,Manasota,Youth Services,13,9,26644.56
+2023-06-01,2023,6,S09,Manasota,Senior Employment,17,12,36205.57
+2023-06-01,2023,6,S09,Manasota,Disability Services,11,6,18713.61
+2023-06-01,2023,6,S09,Manasota,Financial Literacy,18,12,37396.01
+2023-07-01,2023,7,S09,Manasota,Job Training,20,14,58146.78
+2023-07-01,2023,7,S09,Manasota,Youth Services,16,9,29289.51
+2023-07-01,2023,7,S09,Manasota,Senior Employment,11,7,24303.57
+2023-07-01,2023,7,S09,Manasota,Disability Services,24,17,65571.8
+2023-07-01,2023,7,S09,Manasota,Financial Literacy,11,7,27164.68
+2023-08-01,2023,8,S09,Manasota,Job Training,15,11,34421.4
+2023-08-01,2023,8,S09,Manasota,Youth Services,13,7,29208.4
+2023-08-01,2023,8,S09,Manasota,Senior Employment,16,9,34819.06
+2023-08-01,2023,8,S09,Manasota,Disability Services,17,10,34855.66
+2023-08-01,2023,8,S09,Manasota,Financial Literacy,8,4,13154.94
+2023-09-01,2023,9,S09,Manasota,Job Training,10,5,20439.31
+2023-09-01,2023,9,S09,Manasota,Youth Services,14,9,33116.49
+2023-09-01,2023,9,S09,Manasota,Senior Employment,20,12,49993.26
+2023-09-01,2023,9,S09,Manasota,Disability Services,12,7,19858.12
+2023-09-01,2023,9,S09,Manasota,Financial Literacy,15,8,27793.8
+2023-10-01,2023,10,S09,Manasota,Job Training,13,8,32861.66
+2023-10-01,2023,10,S09,Manasota,Youth Services,14,10,30056.21
+2023-10-01,2023,10,S09,Manasota,Senior Employment,11,6,21105.71
+2023-10-01,2023,10,S09,Manasota,Disability Services,12,9,27174.47
+2023-10-01,2023,10,S09,Manasota,Financial Literacy,14,8,28308.29
+2023-11-01,2023,11,S09,Manasota,Job Training,22,12,40121.11
+2023-11-01,2023,11,S09,Manasota,Youth Services,9,6,17366.36
+2023-11-01,2023,11,S09,Manasota,Senior Employment,14,9,25440.99
+2023-11-01,2023,11,S09,Manasota,Disability Services,17,11,36782.34
+2023-11-01,2023,11,S09,Manasota,Financial Literacy,12,7,28317.0
+2023-12-01,2023,12,S09,Manasota,Job Training,16,11,44540.36
+2023-12-01,2023,12,S09,Manasota,Youth Services,16,12,38665.94
+2023-12-01,2023,12,S09,Manasota,Senior Employment,13,9,36938.25
+2023-12-01,2023,12,S09,Manasota,Disability Services,21,16,46018.27
+2023-12-01,2023,12,S09,Manasota,Financial Literacy,11,7,25526.16
+2024-01-01,2024,1,S09,Manasota,Job Training,11,8,23259.48
+2024-01-01,2024,1,S09,Manasota,Youth Services,16,10,37719.25
+2024-01-01,2024,1,S09,Manasota,Senior Employment,10,5,16805.69
+2024-01-01,2024,1,S09,Manasota,Disability Services,7,5,20588.55
+2024-01-01,2024,1,S09,Manasota,Financial Literacy,18,14,48577.36
+2024-02-01,2024,2,S09,Manasota,Job Training,16,10,39738.76
+2024-02-01,2024,2,S09,Manasota,Youth Services,10,7,28458.97
+2024-02-01,2024,2,S09,Manasota,Senior Employment,20,14,46927.06
+2024-02-01,2024,2,S09,Manasota,Disability Services,15,11,44589.38
+2024-02-01,2024,2,S09,Manasota,Financial Literacy,23,15,58361.0
+2024-03-01,2024,3,S09,Manasota,Job Training,14,10,34917.41
+2024-03-01,2024,3,S09,Manasota,Youth Services,20,13,38362.39
+2024-03-01,2024,3,S09,Manasota,Senior Employment,14,10,31523.51
+2024-03-01,2024,3,S09,Manasota,Disability Services,12,8,33154.11
+2024-03-01,2024,3,S09,Manasota,Financial Literacy,17,11,32162.22
+2024-04-01,2024,4,S09,Manasota,Job Training,18,12,48700.03
+2024-04-01,2024,4,S09,Manasota,Youth Services,18,14,58602.73
+2024-04-01,2024,4,S09,Manasota,Senior Employment,16,10,39026.42
+2024-04-01,2024,4,S09,Manasota,Disability Services,7,4,13265.83
+2024-04-01,2024,4,S09,Manasota,Financial Literacy,12,8,28660.92
+2024-05-01,2024,5,S09,Manasota,Job Training,12,7,27389.34
+2024-05-01,2024,5,S09,Manasota,Youth Services,11,8,30328.39
+2024-05-01,2024,5,S09,Manasota,Senior Employment,10,7,27210.67
+2024-05-01,2024,5,S09,Manasota,Disability Services,12,6,21059.2
+2024-05-01,2024,5,S09,Manasota,Financial Literacy,7,4,13688.56
+2024-06-01,2024,6,S09,Manasota,Job Training,18,13,43124.51
+2024-06-01,2024,6,S09,Manasota,Youth Services,14,11,32476.45
+2024-06-01,2024,6,S09,Manasota,Senior Employment,15,10,35778.89
+2024-06-01,2024,6,S09,Manasota,Disability Services,16,11,38451.91
+2024-06-01,2024,6,S09,Manasota,Financial Literacy,15,9,30968.02
+2024-07-01,2024,7,S09,Manasota,Job Training,15,9,31785.31
+2024-07-01,2024,7,S09,Manasota,Youth Services,12,9,35968.89
+2024-07-01,2024,7,S09,Manasota,Senior Employment,12,8,31753.41
+2024-07-01,2024,7,S09,Manasota,Disability Services,10,5,20432.54
+2024-07-01,2024,7,S09,Manasota,Financial Literacy,8,5,17136.64
+2024-08-01,2024,8,S09,Manasota,Job Training,17,11,38949.11
+2024-08-01,2024,8,S09,Manasota,Youth Services,15,8,30365.75
+2024-08-01,2024,8,S09,Manasota,Senior Employment,17,11,39552.76
+2024-08-01,2024,8,S09,Manasota,Disability Services,17,12,38316.63
+2024-08-01,2024,8,S09,Manasota,Financial Literacy,15,10,29664.64
+2024-09-01,2024,9,S09,Manasota,Job Training,17,10,32030.45
+2024-09-01,2024,9,S09,Manasota,Youth Services,21,11,40049.19
+2024-09-01,2024,9,S09,Manasota,Senior Employment,9,6,24147.7
+2024-09-01,2024,9,S09,Manasota,Disability Services,18,11,42728.23
+2024-09-01,2024,9,S09,Manasota,Financial Literacy,18,13,38234.65
+2024-10-01,2024,10,S09,Manasota,Job Training,9,6,21305.34
+2024-10-01,2024,10,S09,Manasota,Youth Services,11,6,19544.1
+2024-10-01,2024,10,S09,Manasota,Senior Employment,11,8,25839.32
+2024-10-01,2024,10,S09,Manasota,Disability Services,10,6,21961.24
+2024-10-01,2024,10,S09,Manasota,Financial Literacy,15,8,27771.67
+2024-11-01,2024,11,S09,Manasota,Job Training,17,12,41180.01
+2024-11-01,2024,11,S09,Manasota,Youth Services,12,7,19826.28
+2024-11-01,2024,11,S09,Manasota,Senior Employment,12,9,28522.6
+2024-11-01,2024,11,S09,Manasota,Disability Services,9,6,19268.9
+2024-11-01,2024,11,S09,Manasota,Financial Literacy,16,9,29361.62
+2024-12-01,2024,12,S09,Manasota,Job Training,18,10,30286.51
+2024-12-01,2024,12,S09,Manasota,Youth Services,12,7,22651.49
+2024-12-01,2024,12,S09,Manasota,Senior Employment,14,10,39602.42
+2024-12-01,2024,12,S09,Manasota,Disability Services,11,8,30434.07
+2024-12-01,2024,12,S09,Manasota,Financial Literacy,19,12,46079.32
+2023-01-01,2023,1,S10,Manasota,Job Training,7,4,11298.65
+2023-01-01,2023,1,S10,Manasota,Youth Services,11,6,22104.91
+2023-01-01,2023,1,S10,Manasota,Senior Employment,11,8,27631.78
+2023-01-01,2023,1,S10,Manasota,Disability Services,13,10,28350.51
+2023-01-01,2023,1,S10,Manasota,Financial Literacy,13,8,31050.97
+2023-02-01,2023,2,S10,Manasota,Job Training,11,8,27536.64
+2023-02-01,2023,2,S10,Manasota,Youth Services,10,6,19044.87
+2023-02-01,2023,2,S10,Manasota,Senior Employment,19,10,31768.61
+2023-02-01,2023,2,S10,Manasota,Disability Services,15,10,36782.72
+2023-02-01,2023,2,S10,Manasota,Financial Literacy,18,13,40675.29
+2023-03-01,2023,3,S10,Manasota,Job Training,16,9,34199.72
+2023-03-01,2023,3,S10,Manasota,Youth Services,10,6,22287.64
+2023-03-01,2023,3,S10,Manasota,Senior Employment,11,6,20761.8
+2023-03-01,2023,3,S10,Manasota,Disability Services,13,7,23806.71
+2023-03-01,2023,3,S10,Manasota,Financial Literacy,17,13,36574.4
+2023-04-01,2023,4,S10,Manasota,Job Training,24,19,59919.68
+2023-04-01,2023,4,S10,Manasota,Youth Services,14,8,31833.56
+2023-04-01,2023,4,S10,Manasota,Senior Employment,15,8,33561.49
+2023-04-01,2023,4,S10,Manasota,Disability Services,15,9,32101.22
+2023-04-01,2023,4,S10,Manasota,Financial Literacy,22,13,39167.49
+2023-05-01,2023,5,S10,Manasota,Job Training,18,10,32178.92
+2023-05-01,2023,5,S10,Manasota,Youth Services,14,7,28983.42
+2023-05-01,2023,5,S10,Manasota,Senior Employment,22,16,57760.09
+2023-05-01,2023,5,S10,Manasota,Disability Services,11,7,23708.52
+2023-05-01,2023,5,S10,Manasota,Financial Literacy,11,7,26017.51
+2023-06-01,2023,6,S10,Manasota,Job Training,10,6,21221.87
+2023-06-01,2023,6,S10,Manasota,Youth Services,17,10,37719.88
+2023-06-01,2023,6,S10,Manasota,Senior Employment,22,12,45019.1
+2023-06-01,2023,6,S10,Manasota,Disability Services,14,7,23331.68
+2023-06-01,2023,6,S10,Manasota,Financial Literacy,20,13,53347.08
+2023-07-01,2023,7,S10,Manasota,Job Training,13,9,31033.01
+2023-07-01,2023,7,S10,Manasota,Youth Services,10,7,28623.9
+2023-07-01,2023,7,S10,Manasota,Senior Employment,8,5,19661.2
+2023-07-01,2023,7,S10,Manasota,Disability Services,15,9,35053.13
+2023-07-01,2023,7,S10,Manasota,Financial Literacy,10,6,23971.04
+2023-08-01,2023,8,S10,Manasota,Job Training,17,11,32800.35
+2023-08-01,2023,8,S10,Manasota,Youth Services,16,12,48367.74
+2023-08-01,2023,8,S10,Manasota,Senior Employment,16,11,39661.79
+2023-08-01,2023,8,S10,Manasota,Disability Services,13,8,28827.81
+2023-08-01,2023,8,S10,Manasota,Financial Literacy,13,9,31896.49
+2023-09-01,2023,9,S10,Manasota,Job Training,7,5,19286.66
+2023-09-01,2023,9,S10,Manasota,Youth Services,12,6,24874.37
+2023-09-01,2023,9,S10,Manasota,Senior Employment,11,7,23117.91
+2023-09-01,2023,9,S10,Manasota,Disability Services,14,10,33617.22
+2023-09-01,2023,9,S10,Manasota,Financial Literacy,13,7,25883.91
+2023-10-01,2023,10,S10,Manasota,Job Training,7,4,12312.06
+2023-10-01,2023,10,S10,Manasota,Youth Services,14,9,35274.46
+2023-10-01,2023,10,S10,Manasota,Senior Employment,14,10,30614.76
+2023-10-01,2023,10,S10,Manasota,Disability Services,17,11,43912.1
+2023-10-01,2023,10,S10,Manasota,Financial Literacy,16,9,36173.6
+2023-11-01,2023,11,S10,Manasota,Job Training,17,12,45791.62
+2023-11-01,2023,11,S10,Manasota,Youth Services,16,11,36997.24
+2023-11-01,2023,11,S10,Manasota,Senior Employment,14,10,31811.06
+2023-11-01,2023,11,S10,Manasota,Disability Services,15,10,41870.67
+2023-11-01,2023,11,S10,Manasota,Financial Literacy,14,8,23094.97
+2023-12-01,2023,12,S10,Manasota,Job Training,14,10,41399.49
+2023-12-01,2023,12,S10,Manasota,Youth Services,13,9,34157.03
+2023-12-01,2023,12,S10,Manasota,Senior Employment,14,10,31543.18
+2023-12-01,2023,12,S10,Manasota,Disability Services,14,10,37271.47
+2023-12-01,2023,12,S10,Manasota,Financial Literacy,14,9,25969.9
+2024-01-01,2024,1,S10,Manasota,Job Training,19,14,41915.53
+2024-01-01,2024,1,S10,Manasota,Youth Services,19,11,41077.94
+2024-01-01,2024,1,S10,Manasota,Senior Employment,20,13,44460.02
+2024-01-01,2024,1,S10,Manasota,Disability Services,8,6,25182.44
+2024-01-01,2024,1,S10,Manasota,Financial Literacy,16,9,33610.86
+2024-02-01,2024,2,S10,Manasota,Job Training,16,9,33738.69
+2024-02-01,2024,2,S10,Manasota,Youth Services,12,8,32611.87
+2024-02-01,2024,2,S10,Manasota,Senior Employment,19,12,37628.3
+2024-02-01,2024,2,S10,Manasota,Disability Services,12,9,32431.36
+2024-02-01,2024,2,S10,Manasota,Financial Literacy,9,6,21276.24
+2024-03-01,2024,3,S10,Manasota,Job Training,11,6,21673.64
+2024-03-01,2024,3,S10,Manasota,Youth Services,9,5,18359.33
+2024-03-01,2024,3,S10,Manasota,Senior Employment,9,5,15116.22
+2024-03-01,2024,3,S10,Manasota,Disability Services,15,8,28222.16
+2024-03-01,2024,3,S10,Manasota,Financial Literacy,11,7,28568.38
+2024-04-01,2024,4,S10,Manasota,Job Training,18,11,33597.31
+2024-04-01,2024,4,S10,Manasota,Youth Services,15,10,34047.07
+2024-04-01,2024,4,S10,Manasota,Senior Employment,14,8,30786.26
+2024-04-01,2024,4,S10,Manasota,Disability Services,11,6,19398.18
+2024-04-01,2024,4,S10,Manasota,Financial Literacy,18,10,33230.65
+2024-05-01,2024,5,S10,Manasota,Job Training,18,12,44690.01
+2024-05-01,2024,5,S10,Manasota,Youth Services,14,8,27240.27
+2024-05-01,2024,5,S10,Manasota,Senior Employment,17,10,38917.8
+2024-05-01,2024,5,S10,Manasota,Disability Services,17,12,46758.36
+2024-05-01,2024,5,S10,Manasota,Financial Literacy,17,13,46757.13
+2024-06-01,2024,6,S10,Manasota,Job Training,10,7,28662.45
+2024-06-01,2024,6,S10,Manasota,Youth Services,10,7,28569.72
+2024-06-01,2024,6,S10,Manasota,Senior Employment,11,7,22833.31
+2024-06-01,2024,6,S10,Manasota,Disability Services,20,11,34010.69
+2024-06-01,2024,6,S10,Manasota,Financial Literacy,11,6,23147.1
+2024-07-01,2024,7,S10,Manasota,Job Training,10,6,22433.09
+2024-07-01,2024,7,S10,Manasota,Youth Services,11,7,25094.3
+2024-07-01,2024,7,S10,Manasota,Senior Employment,18,12,41145.39
+2024-07-01,2024,7,S10,Manasota,Disability Services,20,15,59206.77
+2024-07-01,2024,7,S10,Manasota,Financial Literacy,5,3,11430.17
+2024-08-01,2024,8,S10,Manasota,Job Training,15,9,27517.29
+2024-08-01,2024,8,S10,Manasota,Youth Services,17,11,31603.22
+2024-08-01,2024,8,S10,Manasota,Senior Employment,8,5,18699.34
+2024-08-01,2024,8,S10,Manasota,Disability Services,10,7,27185.01
+2024-08-01,2024,8,S10,Manasota,Financial Literacy,18,10,36260.17
+2024-09-01,2024,9,S10,Manasota,Job Training,18,10,38034.45
+2024-09-01,2024,9,S10,Manasota,Youth Services,12,7,22686.11
+2024-09-01,2024,9,S10,Manasota,Senior Employment,16,8,23485.37
+2024-09-01,2024,9,S10,Manasota,Disability Services,11,6,21509.52
+2024-09-01,2024,9,S10,Manasota,Financial Literacy,9,5,14470.6
+2024-10-01,2024,10,S10,Manasota,Job Training,17,12,35261.37
+2024-10-01,2024,10,S10,Manasota,Youth Services,9,6,19368.37
+2024-10-01,2024,10,S10,Manasota,Senior Employment,14,7,28806.45
+2024-10-01,2024,10,S10,Manasota,Disability Services,15,10,35199.56
+2024-10-01,2024,10,S10,Manasota,Financial Literacy,8,4,13520.55
+2024-11-01,2024,11,S10,Manasota,Job Training,16,11,41141.62
+2024-11-01,2024,11,S10,Manasota,Youth Services,9,5,19036.34
+2024-11-01,2024,11,S10,Manasota,Senior Employment,23,13,45055.38
+2024-11-01,2024,11,S10,Manasota,Disability Services,20,11,45803.79
+2024-11-01,2024,11,S10,Manasota,Financial Literacy,19,14,48033.49
+2024-12-01,2024,12,S10,Manasota,Job Training,12,9,33509.44
+2024-12-01,2024,12,S10,Manasota,Youth Services,16,9,36166.13
+2024-12-01,2024,12,S10,Manasota,Senior Employment,14,9,34364.65
+2024-12-01,2024,12,S10,Manasota,Disability Services,15,9,36024.38
+2024-12-01,2024,12,S10,Manasota,Financial Literacy,15,11,43067.65
+2023-01-01,2023,1,S11,Manasota,Job Training,16,9,33924.81
+2023-01-01,2023,1,S11,Manasota,Youth Services,17,10,32299.69
+2023-01-01,2023,1,S11,Manasota,Senior Employment,15,8,30003.28
+2023-01-01,2023,1,S11,Manasota,Disability Services,17,10,34048.6
+2023-01-01,2023,1,S11,Manasota,Financial Literacy,13,9,27821.9
+2023-02-01,2023,2,S11,Manasota,Job Training,13,9,31099.12
+2023-02-01,2023,2,S11,Manasota,Youth Services,14,10,38900.15
+2023-02-01,2023,2,S11,Manasota,Senior Employment,23,14,56623.46
+2023-02-01,2023,2,S11,Manasota,Disability Services,7,4,14021.82
+2023-02-01,2023,2,S11,Manasota,Financial Literacy,9,4,14729.34
+2023-03-01,2023,3,S11,Manasota,Job Training,12,7,21255.65
+2023-03-01,2023,3,S11,Manasota,Youth Services,22,13,51685.42
+2023-03-01,2023,3,S11,Manasota,Senior Employment,16,11,45371.42
+2023-03-01,2023,3,S11,Manasota,Disability Services,18,12,44500.27
+2023-03-01,2023,3,S11,Manasota,Financial Literacy,6,4,14192.44
+2023-04-01,2023,4,S11,Manasota,Job Training,13,8,22547.42
+2023-04-01,2023,4,S11,Manasota,Youth Services,17,10,41393.24
+2023-04-01,2023,4,S11,Manasota,Senior Employment,11,6,21867.57
+2023-04-01,2023,4,S11,Manasota,Disability Services,13,9,25320.48
+2023-04-01,2023,4,S11,Manasota,Financial Literacy,18,14,50753.09
+2023-05-01,2023,5,S11,Manasota,Job Training,6,4,15910.8
+2023-05-01,2023,5,S11,Manasota,Youth Services,12,8,33232.24
+2023-05-01,2023,5,S11,Manasota,Senior Employment,15,10,37612.13
+2023-05-01,2023,5,S11,Manasota,Disability Services,11,7,23266.24
+2023-05-01,2023,5,S11,Manasota,Financial Literacy,12,9,34656.23
+2023-06-01,2023,6,S11,Manasota,Job Training,17,10,36494.47
+2023-06-01,2023,6,S11,Manasota,Youth Services,13,8,24123.27
+2023-06-01,2023,6,S11,Manasota,Senior Employment,17,10,34188.39
+2023-06-01,2023,6,S11,Manasota,Disability Services,10,5,17913.05
+2023-06-01,2023,6,S11,Manasota,Financial Literacy,16,12,36710.37
+2023-07-01,2023,7,S11,Manasota,Job Training,11,7,24494.08
+2023-07-01,2023,7,S11,Manasota,Youth Services,9,6,17937.21
+2023-07-01,2023,7,S11,Manasota,Senior Employment,12,8,23616.87
+2023-07-01,2023,7,S11,Manasota,Disability Services,12,8,31845.64
+2023-07-01,2023,7,S11,Manasota,Financial Literacy,13,10,36066.6
+2023-08-01,2023,8,S11,Manasota,Job Training,15,10,36062.75
+2023-08-01,2023,8,S11,Manasota,Youth Services,19,13,44809.49
+2023-08-01,2023,8,S11,Manasota,Senior Employment,10,7,24046.74
+2023-08-01,2023,8,S11,Manasota,Disability Services,19,12,44469.02
+2023-08-01,2023,8,S11,Manasota,Financial Literacy,14,11,32583.85
+2023-09-01,2023,9,S11,Manasota,Job Training,9,6,19930.48
+2023-09-01,2023,9,S11,Manasota,Youth Services,17,12,46533.61
+2023-09-01,2023,9,S11,Manasota,Senior Employment,14,8,27000.76
+2023-09-01,2023,9,S11,Manasota,Disability Services,14,10,40691.43
+2023-09-01,2023,9,S11,Manasota,Financial Literacy,18,13,43594.25
+2023-10-01,2023,10,S11,Manasota,Job Training,11,6,19586.93
+2023-10-01,2023,10,S11,Manasota,Youth Services,12,7,21471.5
+2023-10-01,2023,10,S11,Manasota,Senior Employment,14,7,21766.45
+2023-10-01,2023,10,S11,Manasota,Disability Services,13,9,31640.62
+2023-10-01,2023,10,S11,Manasota,Financial Literacy,10,6,22941.5
+2023-11-01,2023,11,S11,Manasota,Job Training,14,8,29995.61
+2023-11-01,2023,11,S11,Manasota,Youth Services,14,10,28702.36
+2023-11-01,2023,11,S11,Manasota,Senior Employment,14,8,33534.75
+2023-11-01,2023,11,S11,Manasota,Disability Services,8,5,20540.31
+2023-11-01,2023,11,S11,Manasota,Financial Literacy,17,9,29909.04
+2023-12-01,2023,12,S11,Manasota,Job Training,16,9,29354.16
+2023-12-01,2023,12,S11,Manasota,Youth Services,9,5,18914.79
+2023-12-01,2023,12,S11,Manasota,Senior Employment,16,9,29166.49
+2023-12-01,2023,12,S11,Manasota,Disability Services,12,6,23764.18
+2023-12-01,2023,12,S11,Manasota,Financial Literacy,17,12,44831.02
+2024-01-01,2024,1,S11,Manasota,Job Training,18,10,31310.78
+2024-01-01,2024,1,S11,Manasota,Youth Services,12,8,32765.06
+2024-01-01,2024,1,S11,Manasota,Senior Employment,6,4,12764.01
+2024-01-01,2024,1,S11,Manasota,Disability Services,12,6,22198.63
+2024-01-01,2024,1,S11,Manasota,Financial Literacy,12,9,27356.0
+2024-02-01,2024,2,S11,Manasota,Job Training,22,17,52543.98
+2024-02-01,2024,2,S11,Manasota,Youth Services,16,11,40131.0
+2024-02-01,2024,2,S11,Manasota,Senior Employment,15,9,27971.75
+2024-02-01,2024,2,S11,Manasota,Disability Services,16,10,34812.54
+2024-02-01,2024,2,S11,Manasota,Financial Literacy,24,13,40260.77
+2024-03-01,2024,3,S11,Manasota,Job Training,21,15,56994.06
+2024-03-01,2024,3,S11,Manasota,Youth Services,12,8,27788.68
+2024-03-01,2024,3,S11,Manasota,Senior Employment,15,11,38349.1
+2024-03-01,2024,3,S11,Manasota,Disability Services,11,6,22609.69
+2024-03-01,2024,3,S11,Manasota,Financial Literacy,12,9,34988.7
+2024-04-01,2024,4,S11,Manasota,Job Training,18,13,50216.76
+2024-04-01,2024,4,S11,Manasota,Youth Services,14,8,28449.2
+2024-04-01,2024,4,S11,Manasota,Senior Employment,14,8,28065.33
+2024-04-01,2024,4,S11,Manasota,Disability Services,17,10,38103.22
+2024-04-01,2024,4,S11,Manasota,Financial Literacy,16,9,26566.39
+2024-05-01,2024,5,S11,Manasota,Job Training,18,12,39597.29
+2024-05-01,2024,5,S11,Manasota,Youth Services,15,10,35217.28
+2024-05-01,2024,5,S11,Manasota,Senior Employment,15,11,35895.12
+2024-05-01,2024,5,S11,Manasota,Disability Services,11,7,27900.59
+2024-05-01,2024,5,S11,Manasota,Financial Literacy,12,6,20038.73
+2024-06-01,2024,6,S11,Manasota,Job Training,12,9,31007.1
+2024-06-01,2024,6,S11,Manasota,Youth Services,19,15,59033.28
+2024-06-01,2024,6,S11,Manasota,Senior Employment,15,9,36814.12
+2024-06-01,2024,6,S11,Manasota,Disability Services,10,7,28047.27
+2024-06-01,2024,6,S11,Manasota,Financial Literacy,15,9,28693.04
+2024-07-01,2024,7,S11,Manasota,Job Training,21,14,45645.67
+2024-07-01,2024,7,S11,Manasota,Youth Services,10,5,17874.39
+2024-07-01,2024,7,S11,Manasota,Senior Employment,12,8,24835.07
+2024-07-01,2024,7,S11,Manasota,Disability Services,11,7,26064.73
+2024-07-01,2024,7,S11,Manasota,Financial Literacy,14,10,39027.92
+2024-08-01,2024,8,S11,Manasota,Job Training,16,11,43792.03
+2024-08-01,2024,8,S11,Manasota,Youth Services,16,11,39604.75
+2024-08-01,2024,8,S11,Manasota,Senior Employment,12,7,27238.99
+2024-08-01,2024,8,S11,Manasota,Disability Services,15,8,30725.65
+2024-08-01,2024,8,S11,Manasota,Financial Literacy,20,11,45197.41
+2024-09-01,2024,9,S11,Manasota,Job Training,16,11,45703.92
+2024-09-01,2024,9,S11,Manasota,Youth Services,9,6,24276.83
+2024-09-01,2024,9,S11,Manasota,Senior Employment,15,9,30521.15
+2024-09-01,2024,9,S11,Manasota,Disability Services,11,8,25271.03
+2024-09-01,2024,9,S11,Manasota,Financial Literacy,11,7,20437.57
+2024-10-01,2024,10,S11,Manasota,Job Training,11,6,17691.62
+2024-10-01,2024,10,S11,Manasota,Youth Services,24,15,60870.85
+2024-10-01,2024,10,S11,Manasota,Senior Employment,17,12,47524.21
+2024-10-01,2024,10,S11,Manasota,Disability Services,20,15,53243.35
+2024-10-01,2024,10,S11,Manasota,Financial Literacy,15,8,26852.18
+2024-11-01,2024,11,S11,Manasota,Job Training,23,18,74438.34
+2024-11-01,2024,11,S11,Manasota,Youth Services,20,14,56244.49
+2024-11-01,2024,11,S11,Manasota,Senior Employment,18,14,52639.26
+2024-11-01,2024,11,S11,Manasota,Disability Services,29,16,54912.68
+2024-11-01,2024,11,S11,Manasota,Financial Literacy,14,8,33332.27
+2024-12-01,2024,12,S11,Manasota,Job Training,12,7,25277.76
+2024-12-01,2024,12,S11,Manasota,Youth Services,6,4,12244.4
+2024-12-01,2024,12,S11,Manasota,Senior Employment,11,6,20474.78
+2024-12-01,2024,12,S11,Manasota,Disability Services,17,13,52952.88
+2024-12-01,2024,12,S11,Manasota,Financial Literacy,12,6,20231.59
+2023-01-01,2023,1,S12,Manasota,Job Training,15,11,41835.74
+2023-01-01,2023,1,S12,Manasota,Youth Services,12,9,26373.01
+2023-01-01,2023,1,S12,Manasota,Senior Employment,12,8,28472.59
+2023-01-01,2023,1,S12,Manasota,Disability Services,12,8,28871.6
+2023-01-01,2023,1,S12,Manasota,Financial Literacy,9,5,17437.27
+2023-02-01,2023,2,S12,Manasota,Job Training,20,11,37558.09
+2023-02-01,2023,2,S12,Manasota,Youth Services,14,9,32302.65
+2023-02-01,2023,2,S12,Manasota,Senior Employment,16,10,39381.34
+2023-02-01,2023,2,S12,Manasota,Disability Services,13,9,25787.68
+2023-02-01,2023,2,S12,Manasota,Financial Literacy,11,8,27935.44
+2023-03-01,2023,3,S12,Manasota,Job Training,13,8,30340.52
+2023-03-01,2023,3,S12,Manasota,Youth Services,16,10,41190.05
+2023-03-01,2023,3,S12,Manasota,Senior Employment,15,11,32796.62
+2023-03-01,2023,3,S12,Manasota,Disability Services,13,8,31930.43
+2023-03-01,2023,3,S12,Manasota,Financial Literacy,16,11,33746.71
+2023-04-01,2023,4,S12,Manasota,Job Training,13,7,21676.49
+2023-04-01,2023,4,S12,Manasota,Youth Services,14,9,28320.85
+2023-04-01,2023,4,S12,Manasota,Senior Employment,16,10,40336.38
+2023-04-01,2023,4,S12,Manasota,Disability Services,16,9,25207.71
+2023-04-01,2023,4,S12,Manasota,Financial Literacy,9,6,22277.73
+2023-05-01,2023,5,S12,Manasota,Job Training,19,12,35233.37
+2023-05-01,2023,5,S12,Manasota,Youth Services,13,10,35378.62
+2023-05-01,2023,5,S12,Manasota,Senior Employment,18,10,31631.32
+2023-05-01,2023,5,S12,Manasota,Disability Services,13,8,24692.12
+2023-05-01,2023,5,S12,Manasota,Financial Literacy,7,5,17113.62
+2023-06-01,2023,6,S12,Manasota,Job Training,17,9,27000.39
+2023-06-01,2023,6,S12,Manasota,Youth Services,17,10,29083.91
+2023-06-01,2023,6,S12,Manasota,Senior Employment,13,7,28385.09
+2023-06-01,2023,6,S12,Manasota,Disability Services,12,7,25659.74
+2023-06-01,2023,6,S12,Manasota,Financial Literacy,9,7,25037.96
+2023-07-01,2023,7,S12,Manasota,Job Training,21,13,43691.92
+2023-07-01,2023,7,S12,Manasota,Youth Services,16,12,34027.41
+2023-07-01,2023,7,S12,Manasota,Senior Employment,16,9,31630.98
+2023-07-01,2023,7,S12,Manasota,Disability Services,14,8,26971.44
+2023-07-01,2023,7,S12,Manasota,Financial Literacy,13,7,19642.86
+2023-08-01,2023,8,S12,Manasota,Job Training,16,9,36743.0
+2023-08-01,2023,8,S12,Manasota,Youth Services,15,11,37698.31
+2023-08-01,2023,8,S12,Manasota,Senior Employment,6,3,9192.71
+2023-08-01,2023,8,S12,Manasota,Disability Services,13,7,23969.05
+2023-08-01,2023,8,S12,Manasota,Financial Literacy,12,7,25915.88
+2023-09-01,2023,9,S12,Manasota,Job Training,21,12,47927.14
+2023-09-01,2023,9,S12,Manasota,Youth Services,14,8,31683.26
+2023-09-01,2023,9,S12,Manasota,Senior Employment,21,12,48640.95
+2023-09-01,2023,9,S12,Manasota,Disability Services,9,6,19025.84
+2023-09-01,2023,9,S12,Manasota,Financial Literacy,16,9,33465.78
+2023-10-01,2023,10,S12,Manasota,Job Training,21,14,45900.56
+2023-10-01,2023,10,S12,Manasota,Youth Services,13,8,22723.81
+2023-10-01,2023,10,S12,Manasota,Senior Employment,14,9,29989.34
+2023-10-01,2023,10,S12,Manasota,Disability Services,12,7,21364.49
+2023-10-01,2023,10,S12,Manasota,Financial Literacy,15,8,22766.62
+2023-11-01,2023,11,S12,Manasota,Job Training,18,14,47927.47
+2023-11-01,2023,11,S12,Manasota,Youth Services,11,7,25738.38
+2023-11-01,2023,11,S12,Manasota,Senior Employment,12,7,20099.53
+2023-11-01,2023,11,S12,Manasota,Disability Services,16,9,27584.36
+2023-11-01,2023,11,S12,Manasota,Financial Literacy,14,8,25413.18
+2023-12-01,2023,12,S12,Manasota,Job Training,23,14,43072.91
+2023-12-01,2023,12,S12,Manasota,Youth Services,9,6,20625.09
+2023-12-01,2023,12,S12,Manasota,Senior Employment,15,11,42875.06
+2023-12-01,2023,12,S12,Manasota,Disability Services,11,6,19918.37
+2023-12-01,2023,12,S12,Manasota,Financial Literacy,14,10,35606.11
+2024-01-01,2024,1,S12,Manasota,Job Training,19,14,58774.41
+2024-01-01,2024,1,S12,Manasota,Youth Services,21,15,54048.63
+2024-01-01,2024,1,S12,Manasota,Senior Employment,10,7,29256.77
+2024-01-01,2024,1,S12,Manasota,Disability Services,15,10,41711.26
+2024-01-01,2024,1,S12,Manasota,Financial Literacy,10,6,18229.8
+2024-02-01,2024,2,S12,Manasota,Job Training,20,13,50272.05
+2024-02-01,2024,2,S12,Manasota,Youth Services,17,11,32795.13
+2024-02-01,2024,2,S12,Manasota,Senior Employment,20,14,42312.02
+2024-02-01,2024,2,S12,Manasota,Disability Services,12,8,27940.28
+2024-02-01,2024,2,S12,Manasota,Financial Literacy,10,6,18365.47
+2024-03-01,2024,3,S12,Manasota,Job Training,12,8,27797.18
+2024-03-01,2024,3,S12,Manasota,Youth Services,15,11,45102.35
+2024-03-01,2024,3,S12,Manasota,Senior Employment,17,11,40489.97
+2024-03-01,2024,3,S12,Manasota,Disability Services,20,15,54865.89
+2024-03-01,2024,3,S12,Manasota,Financial Literacy,19,11,37933.96
+2024-04-01,2024,4,S12,Manasota,Job Training,9,6,17118.78
+2024-04-01,2024,4,S12,Manasota,Youth Services,9,5,20978.91
+2024-04-01,2024,4,S12,Manasota,Senior Employment,10,7,28244.1
+2024-04-01,2024,4,S12,Manasota,Disability Services,17,11,46067.24
+2024-04-01,2024,4,S12,Manasota,Financial Literacy,5,3,10289.07
+2024-05-01,2024,5,S12,Manasota,Job Training,21,11,37081.09
+2024-05-01,2024,5,S12,Manasota,Youth Services,16,11,42658.61
+2024-05-01,2024,5,S12,Manasota,Senior Employment,16,12,45899.61
+2024-05-01,2024,5,S12,Manasota,Disability Services,23,15,54191.91
+2024-05-01,2024,5,S12,Manasota,Financial Literacy,12,8,30473.89
+2024-06-01,2024,6,S12,Manasota,Job Training,18,11,33273.04
+2024-06-01,2024,6,S12,Manasota,Youth Services,21,15,53452.24
+2024-06-01,2024,6,S12,Manasota,Senior Employment,11,7,29134.76
+2024-06-01,2024,6,S12,Manasota,Disability Services,14,8,32987.32
+2024-06-01,2024,6,S12,Manasota,Financial Literacy,7,4,16013.36
+2024-07-01,2024,7,S12,Manasota,Job Training,15,10,34779.65
+2024-07-01,2024,7,S12,Manasota,Youth Services,19,14,54612.73
+2024-07-01,2024,7,S12,Manasota,Senior Employment,10,5,18083.24
+2024-07-01,2024,7,S12,Manasota,Disability Services,7,5,19908.39
+2024-07-01,2024,7,S12,Manasota,Financial Literacy,12,6,23957.91
+2024-08-01,2024,8,S12,Manasota,Job Training,18,11,36650.54
+2024-08-01,2024,8,S12,Manasota,Youth Services,24,17,54969.27
+2024-08-01,2024,8,S12,Manasota,Senior Employment,12,8,28389.61
+2024-08-01,2024,8,S12,Manasota,Disability Services,18,11,42105.38
+2024-08-01,2024,8,S12,Manasota,Financial Literacy,16,12,42766.81
+2024-09-01,2024,9,S12,Manasota,Job Training,14,9,30862.9
+2024-09-01,2024,9,S12,Manasota,Youth Services,9,7,25436.4
+2024-09-01,2024,9,S12,Manasota,Senior Employment,18,11,36526.48
+2024-09-01,2024,9,S12,Manasota,Disability Services,18,12,45576.82
+2024-09-01,2024,9,S12,Manasota,Financial Literacy,18,10,32085.13
+2024-10-01,2024,10,S12,Manasota,Job Training,15,10,28748.52
+2024-10-01,2024,10,S12,Manasota,Youth Services,15,10,33915.47
+2024-10-01,2024,10,S12,Manasota,Senior Employment,10,7,24878.97
+2024-10-01,2024,10,S12,Manasota,Disability Services,20,13,44717.86
+2024-10-01,2024,10,S12,Manasota,Financial Literacy,12,9,26280.97
+2024-11-01,2024,11,S12,Manasota,Job Training,12,7,27193.14
+2024-11-01,2024,11,S12,Manasota,Youth Services,14,10,40387.62
+2024-11-01,2024,11,S12,Manasota,Senior Employment,15,8,24871.23
+2024-11-01,2024,11,S12,Manasota,Disability Services,11,8,28243.99
+2024-11-01,2024,11,S12,Manasota,Financial Literacy,10,6,22035.38
+2024-12-01,2024,12,S12,Manasota,Job Training,14,9,28247.12
+2024-12-01,2024,12,S12,Manasota,Youth Services,7,4,11712.92
+2024-12-01,2024,12,S12,Manasota,Senior Employment,12,8,29242.39
+2024-12-01,2024,12,S12,Manasota,Disability Services,20,15,50384.02
+2024-12-01,2024,12,S12,Manasota,Financial Literacy,14,8,33325.49

@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Goodwill Industries — BI Performance Dashboard</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0f1117;
+    --surface: #181c26;
+    --surface2: #1e2333;
+    --border: #252b3b;
+    --accent: #00c6a7;
+    --accent2: #f5a623;
+    --accent3: #5b8ff9;
+    --accent4: #e84393;
+    --text: #e8eaf0;
+    --muted: #7a82a0;
+    --red: #ff5e57;
+    --green: #00c6a7;
+    --palm: #5b8ff9;
+    --treasure: #f5a623;
+    --manasota: #00c6a7;
+    --r1: 12px;
+    --r2: 16px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  /* ── HEADER ── */
+  .header {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 0 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 58px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .logo-area {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .logo-mark {
+    width: 38px; height: 38px;
+    background: linear-gradient(135deg, var(--accent), var(--accent3));
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px; font-weight: 700; color: #fff;
+    letter-spacing: -1px;
+  }
+  .logo-text { display: flex; flex-direction: column; gap: 1px; }
+  .logo-title { font-size: 15px; font-weight: 700; color: var(--text); letter-spacing: -0.3px; }
+  .logo-sub { font-size: 11px; color: var(--muted); font-weight: 400; }
+  .header-right {
+    display: flex; align-items: center; gap: 16px;
+  }
+  .date-badge {
+    font-size: 12px; color: var(--muted);
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    padding: 5px 12px; border-radius: 20px;
+  }
+  .year-toggle {
+    display: flex; gap: 4px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 3px;
+  }
+  .year-btn {
+    padding: 4px 14px; border-radius: 6px; border: none; cursor: pointer;
+    font-family: 'DM Sans', sans-serif; font-size: 12px; font-weight: 600;
+    transition: all 0.2s;
+    background: transparent; color: var(--muted);
+  }
+  .year-btn.active { background: var(--accent3); color: #fff; }
+
+  /* ── NAV TABS ── */
+  .nav-tabs {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    padding: 0 28px;
+    gap: 0;
+  }
+  .nav-tab {
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--muted);
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+  .nav-tab:hover { color: var(--text); }
+  .nav-tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+  /* ── LAYOUT ── */
+  .page { display: none; padding: 24px 28px; }
+  .page.active { display: block; }
+
+  /* ── KPI STRIP ── */
+  .kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+  .kpi-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--r1);
+    padding: 18px 20px;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.2s;
+  }
+  .kpi-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: var(--kpi-color, var(--accent));
+  }
+  .kpi-card:hover { border-color: var(--kpi-color, var(--accent)); }
+  .kpi-label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.7px; font-weight: 600; margin-bottom: 8px; }
+  .kpi-value { font-size: 28px; font-weight: 700; color: var(--text); letter-spacing: -1px; font-family: 'DM Mono', monospace; }
+  .kpi-sub { display: flex; align-items: center; gap: 6px; margin-top: 6px; font-size: 12px; }
+  .kpi-delta { font-weight: 600; }
+  .kpi-delta.up { color: var(--green); }
+  .kpi-delta.down { color: var(--red); }
+  .kpi-vs { color: var(--muted); }
+  .kpi-spark { position: absolute; bottom: 0; right: 0; opacity: 0.2; font-size: 52px; font-weight: 900; color: var(--kpi-color, var(--accent)); pointer-events: none; line-height: 1; padding: 0 8px 0 0; }
+
+  /* ── CHART CARDS ── */
+  .chart-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+  .chart-grid-3 { display: grid; grid-template-columns: 1.6fr 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+  .chart-grid-full { margin-bottom: 16px; }
+  .chart-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--r1);
+    padding: 20px;
+  }
+  .chart-header {
+    display: flex; align-items: flex-start; justify-content: space-between;
+    margin-bottom: 16px;
+  }
+  .chart-title { font-size: 13px; font-weight: 700; color: var(--text); }
+  .chart-subtitle { font-size: 11px; color: var(--muted); margin-top: 2px; }
+  .chart-badge {
+    font-size: 10px; font-weight: 600;
+    padding: 3px 8px; border-radius: 4px;
+    background: rgba(0,198,167,0.15); color: var(--accent);
+  }
+  .chart-canvas-wrap { position: relative; }
+
+  /* ── TABLE ── */
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12.5px;
+  }
+  .data-table th {
+    text-align: left; padding: 8px 12px;
+    font-size: 10.5px; font-weight: 600;
+    color: var(--muted); text-transform: uppercase; letter-spacing: 0.6px;
+    border-bottom: 1px solid var(--border);
+  }
+  .data-table td {
+    padding: 9px 12px;
+    border-bottom: 1px solid rgba(37,43,59,0.6);
+    color: var(--text);
+  }
+  .data-table tr:last-child td { border-bottom: none; }
+  .data-table tr:hover td { background: var(--surface2); }
+  .rank-badge {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 22px; height: 22px; border-radius: 6px;
+    font-size: 10px; font-weight: 700;
+    background: var(--surface2); color: var(--muted);
+  }
+  .rank-badge.top { background: rgba(245,166,35,0.15); color: var(--accent2); }
+  .bar-cell { display: flex; align-items: center; gap: 8px; }
+  .mini-bar { height: 6px; border-radius: 3px; background: var(--accent3); opacity: 0.7; }
+  .region-dot {
+    display: inline-block; width: 8px; height: 8px; border-radius: 50%;
+    margin-right: 6px; flex-shrink: 0;
+  }
+
+  /* ── PROGRESS BARS ── */
+  .progress-wrap { margin-bottom: 14px; }
+  .progress-label { display: flex; justify-content: space-between; margin-bottom: 5px; font-size: 12px; }
+  .progress-bar-bg { height: 8px; background: var(--surface2); border-radius: 4px; }
+  .progress-bar-fill { height: 100%; border-radius: 4px; transition: width 1s ease; }
+
+  /* ── DONUT CENTER ── */
+  .donut-wrap { position: relative; }
+  .donut-center {
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; pointer-events: none;
+  }
+  .donut-center-val { font-size: 22px; font-weight: 700; color: var(--text); font-family: 'DM Mono', monospace; }
+  .donut-center-label { font-size: 10px; color: var(--muted); }
+
+  /* ── LEGEND ── */
+  .legend { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px; }
+  .legend-item { display: flex; align-items: center; gap: 6px; font-size: 11.5px; color: var(--muted); }
+  .legend-dot { width: 10px; height: 10px; border-radius: 3px; flex-shrink: 0; }
+
+  /* ── FORECAST SECTION ── */
+  .forecast-banner {
+    background: linear-gradient(135deg, rgba(91,143,249,0.08), rgba(0,198,167,0.06));
+    border: 1px solid rgba(91,143,249,0.2);
+    border-radius: var(--r1);
+    padding: 16px 20px;
+    margin-bottom: 16px;
+    display: flex; align-items: center; gap: 16px;
+  }
+  .forecast-icon { font-size: 28px; }
+  .forecast-headline { font-size: 14px; font-weight: 700; color: var(--text); }
+  .forecast-detail { font-size: 12px; color: var(--muted); margin-top: 2px; }
+  .highlight { color: var(--accent); font-weight: 600; }
+
+  /* ── PROGRAM CARDS ── */
+  .program-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-bottom: 16px; }
+  .program-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--r1);
+    padding: 16px;
+    text-align: center;
+  }
+  .program-card:hover { border-color: var(--accent); }
+  .program-name { font-size: 11px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+  .program-big { font-size: 26px; font-weight: 700; color: var(--text); font-family: 'DM Mono', monospace; }
+  .program-sub { font-size: 11px; color: var(--muted); margin-top: 2px; }
+  .placement-rate { font-size: 18px; font-weight: 700; margin-top: 8px; }
+
+  /* ── DAX PAGE ── */
+  .dax-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .dax-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--r1);
+    padding: 20px;
+  }
+  .dax-card-title { font-size: 12px; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.7px; margin-bottom: 4px; }
+  .dax-card-desc { font-size: 11.5px; color: var(--muted); margin-bottom: 12px; }
+  .dax-code {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px 16px;
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    color: #c9d1e3;
+    white-space: pre-wrap;
+    line-height: 1.7;
+  }
+  .dax-kw { color: #7ec8e3; }
+  .dax-fn { color: #f5a623; }
+  .dax-str { color: #98d982; }
+  .dax-num { color: #ce9ef5; }
+  .dax-cmt { color: #5a6480; font-style: italic; }
+
+  /* ── SCROLLBAR ── */
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 1100px) {
+    .kpi-grid { grid-template-columns: repeat(2,1fr); }
+    .chart-grid-3 { grid-template-columns: 1fr 1fr; }
+    .program-grid { grid-template-columns: repeat(3,1fr); }
+    .dax-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .kpi-card, .chart-card, .program-card, .dax-card {
+    animation: fadeUp 0.4s ease both;
+  }
+  .kpi-card:nth-child(1) { animation-delay: 0.05s; }
+  .kpi-card:nth-child(2) { animation-delay: 0.10s; }
+  .kpi-card:nth-child(3) { animation-delay: 0.15s; }
+  .kpi-card:nth-child(4) { animation-delay: 0.20s; }
+
+  /* tooltip */
+  .tooltip-custom {
+    position: fixed; z-index: 999;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 12px;
+    color: var(--text);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.15s;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="logo-area">
+    <div class="logo-mark">GI</div>
+    <div class="logo-text">
+      <div class="logo-title">Goodwill Industries — Palm Beaches, Treasure Coast & Manasota</div>
+      <div class="logo-sub">BI Performance Dashboard · Fiscal Year 2023–2024 · Sample Work by Anurag</div>
+    </div>
+  </div>
+  <div class="header-right">
+    <div class="date-badge">📅 FY 2024 · Updated Feb 2025</div>
+    <div class="year-toggle">
+      <button class="year-btn active" onclick="setYear('2024',this)">FY 2024</button>
+      <button class="year-btn" onclick="setYear('2023',this)">FY 2023</button>
+    </div>
+  </div>
+</div>
+
+<!-- NAV TABS -->
+<div class="nav-tabs">
+  <div class="nav-tab active" onclick="showPage('overview',this)">📊 Executive Overview</div>
+  <div class="nav-tab" onclick="showPage('retail',this)">🏪 Retail & Donations</div>
+  <div class="nav-tab" onclick="showPage('stores',this)">📍 Store Performance</div>
+  <div class="nav-tab" onclick="showPage('programs',this)">🎓 Mission Programs</div>
+  <div class="nav-tab" onclick="showPage('forecast',this)">🔮 Forecast & Trend</div>
+  <div class="nav-tab" onclick="showPage('dax',this)">⚙️ DAX Measures</div>
+</div>
+
+<!-- ══════════════════════════════════════════════ PAGE: OVERVIEW -->
+<div id="page-overview" class="page active">
+
+  <div class="kpi-grid">
+    <div class="kpi-card" style="--kpi-color:#5b8ff9">
+      <div class="kpi-label">Total Revenue (FY2024)</div>
+      <div class="kpi-value" id="kpi-rev">$293K</div>
+      <div class="kpi-sub">
+        <span class="kpi-delta up">▲ 4.7%</span>
+        <span class="kpi-vs">vs FY2023 $280K</span>
+      </div>
+      <div class="kpi-spark">$</div>
+    </div>
+    <div class="kpi-card" style="--kpi-color:#00c6a7">
+      <div class="kpi-label">Total Donations (lbs)</div>
+      <div class="kpi-value" id="kpi-don">261K</div>
+      <div class="kpi-sub">
+        <span class="kpi-delta up">▲ 5.5%</span>
+        <span class="kpi-vs">vs FY2023 248K lbs</span>
+      </div>
+      <div class="kpi-spark">♻</div>
+    </div>
+    <div class="kpi-card" style="--kpi-color:#f5a623">
+      <div class="kpi-label">Gross Margin %</div>
+      <div class="kpi-value" id="kpi-gm">77.1%</div>
+      <div class="kpi-sub">
+        <span class="kpi-delta up">▲ +0.1pp</span>
+        <span class="kpi-vs">vs FY2023 77.0%</span>
+      </div>
+      <div class="kpi-spark">%</div>
+    </div>
+    <div class="kpi-card" style="--kpi-color:#e84393">
+      <div class="kpi-label">Job Placements</div>
+      <div class="kpi-value" id="kpi-jobs">6,747</div>
+      <div class="kpi-sub">
+        <span class="kpi-delta up">▲ 5.2%</span>
+        <span class="kpi-vs">vs FY2023 6,414</span>
+      </div>
+      <div class="kpi-spark">👤</div>
+    </div>
+  </div>
+
+  <div class="chart-grid-3">
+    <div class="chart-card">
+      <div class="chart-header">
+        <div>
+          <div class="chart-title">Monthly Revenue Trend</div>
+          <div class="chart-subtitle">FY2024 vs FY2023 — All Regions</div>
+        </div>
+        <span class="chart-badge">YoY +4.7%</span>
+      </div>
+      <div class="chart-canvas-wrap">
+        <canvas id="chart-revenue-trend" height="200"></canvas>
+      </div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-header">
+        <div>
+          <div class="chart-title">Revenue by Region</div>
+          <div class="chart-subtitle">FY2024 Distribution</div>
+        </div>
+      </div>
+      <div class="donut-wrap">
+        <canvas id="chart-region-donut" height="170"></canvas>
+        <div class="donut-center">
+          <div class="donut-center-val">$293K</div>
+          <div class="donut-center-label">Total</div>
+        </div>
+      </div>
+      <div class="legend">
+        <div class="legend-item"><div class="legend-dot" style="background:#5b8ff9"></div>Palm Beaches</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#f5a623"></div>Treasure Coast</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#00c6a7"></div>Manasota</div>
+      </div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-header">
+        <div>
+          <div class="chart-title">Quarterly Performance</div>
+          <div class="chart-subtitle">Revenue by Quarter 2023 vs 2024</div>
+        </div>
+      </div>
+      <canvas id="chart-quarterly" height="185"></canvas>
+    </div>
+  </div>
+
+  <div class="chart-grid-2">
+    <div class="chart-card">
+      <div class="chart-header">
+        <div>
+          <div class="chart-title">Revenue by Category</div>
+          <div class="chart-subtitle">FY2024 — All Stores</div>
+        </div>
+      </div>
+      <canvas id="chart-category-bar" height="200"></canvas>
+    </div>
+    <div class="chart-card">
+      <div class="chart-header">
+        <div>
+          <div class="chart-title">Revenue/lb vs Total Donations</div>
+          <div class="chart-subtitle">Store-level efficiency scatter — FY2024</div>
+        </div>
+        <span class="chart-badge" style="background:rgba(245,166,35,0.15);color:#f5a623">Efficiency</span>
+      </div>
+      <canvas id="chart-scatter" height="200"></canvas>
+    </div>
+  </div>
+
+</div>
+
+<!-- ══════════════════════════════════════════════ PAGE: RETAIL -->
+<div id="page-retail" class="page">
+  <div class="kpi-grid">
+    <div class="kpi-card" style="--kpi-color:#5b8ff9">
+      <div class="kpi-label">Revenue per Donated Lb</div>
+      <div class="kpi-value">$1.12</div>
+      <div class="kpi-sub"><span class="kpi-delta up">▲ Custom DAX KPI</span></div>
+    </div>
+    <div class="kpi-card" style="--kpi-color:#00c6a7">
+      <div class="kpi-label">Units Sold (FY2024)</div>
+      <div class="kpi-value">30,182</div>
+      <div class="kpi-sub"><span class="kpi-delta up">▲ All Categories</span></div>
+    </div>
+    <div class="kpi-card" style="--kpi-color:#f5a623">
+      <div class="kpi-label">Avg Ticket Size</div>
+      <div class="kpi-value">$9.72</div>
+      <div class="kpi-sub"><span class="kpi-vs">Revenue ÷ Units Sold</span></div>
+    </div>
+    <div class="kpi-card" style="--kpi-color:#e84393">
+      <div class="kpi-label">Gross Profit FY2024</div>
+      <div class="kpi-value">$226K</div>
+      <div class="kpi-sub"><span class="kpi-delta up">▲ 4.8%</span><span class="kpi-vs"> vs FY2023 $216K</span></div>
+    </div>
+  </div>
+
+  <div class="chart-grid-2">
+    <div class="chart-card">
+      <div class="chart-header">
+        <div><div class="chart-title">Category Revenue Breakdown</div><div class="chart-subtitle">FY2024 — Horizontal bar sorted by Revenue</div></div>
+      </div>
+      <canvas id="chart-cat-h" height="220"></canvas>
+    </div>
+    <div class="chart-card">
+      <div class="chart-header">
+        <div><div class="chart-title">Donation Intake vs Revenue</div><div class="chart-subtitle">Monthly 2024 — Dual axis</div></div>
+      </div>
+      <canvas id="chart-don-rev" height="220"></canvas>
+    </div>
+  </div>
+
+  <div class="chart-card">
+    <div class="chart-header">
+      <div><div class="chart-title">Category Revenue Share by Region</div><div class="chart-subtitle">FY2024 — Proportional contribution</div></div>
+    </div>
+    <div style="padding-top:8px;">
+      <div id="category-progress-bars"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════ PAGE: STORES -->
+<div id="page-stores" class="page">
+  <div class="chart-grid-2">
+    <div class="chart-card">
+      <div class="chart-header">
+        <div><div class="chart-title">Store Revenue Ranking</div><div class="chart-subtitle">FY2024 — All 12 locations</div></div>
+      </div>
+      <canvas id="chart-store-bar" height="280"></canvas>
+    </div>
+    <div class="chart-card">
+      <div class="chart-header">
+        <div><div class="chart-title">Store Gross Margin %</div><div class="chart-subtitle">FY2024 — Target: 77.0%</div></div>
+      </div>
+      <canvas id="chart-store-margin" height="280"></canvas>
+    </div>
+  </div>
+  <div class="chart-card">
+    <div class="chart-header">
+      <div><div class="chart-title">Store Performance Leaderboard</div><div class="chart-subtitle">FY2024 — Revenue, Donations, Gross Margin, Units Sold</div></div>
+      <span class="chart-badge">12 Stores</span>
+    </div>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Store Name</th>
+          <th>Region</th>
+          <th>Revenue</th>
+          <th>Revenue Bar</th>
+          <th>Donations (lbs)</th>
+          <th>Gross Margin</th>
+          <th>Units Sold</th>
+        </tr>
+      </thead>
+      <tbody id="store-table-body"></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════ PAGE: PROGRAMS -->
+<div id="page-programs" class="page">
+  <div class="forecast-banner">
+    <div class="forecast-icon">🎓</div>
+    <div>
+      <div class="forecast-headline">Mission Impact: <span class="highlight">6,747 Job Placements</span> in FY2024 — +5.2% YoY growth across all 5 programs</div>
+      <div class="forecast-detail">$23.8M in wages earned by program participants. Placement rate steady at 63–65% across all program types.</div>
+    </div>
+  </div>
+
+  <div class="program-grid" id="program-cards"></div>
+
+  <div class="chart-grid-2">
+    <div class="chart-card">
+      <div class="chart-header">
+        <div><div class="chart-title">Participants vs Placements by Program</div><div class="chart-subtitle">FY2024</div></div>
+      </div>
+      <canvas id="chart-programs-bar" height="230"></canvas>
+    </div>
+    <div class="chart-card">
+      <div class="chart-header">
+        <div><div class="chart-title">Placement Rate by Program</div><div class="chart-subtitle">FY2024 — Target: 63%</div></div>
+      </div>
+      <canvas id="chart-placement-rate" height="230"></canvas>
+    </div>
+  </div>
+
+  <div class="chart-card">
+    <div class="chart-header">
+      <div><div class="chart-title">Wages Earned by Program</div><div class="chart-subtitle">Total community economic impact, FY2024 (in $M)</div></div>
+    </div>
+    <canvas id="chart-wages" height="140"></canvas>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════ PAGE: FORECAST -->
+<div id="page-forecast" class="page">
+  <div class="forecast-banner">
+    <div class="forecast-icon">📈</div>
+    <div>
+      <div class="forecast-headline">2025 Revenue Forecast: <span class="highlight">$299.4K projected</span> (+2.0% growth) using linear regression on 24-month trend</div>
+      <div class="forecast-detail">Model: DAX LINEST / Python OLS on monthly revenue t=1..24. R² = 0.87. Seasonality index applied per month. CI bands shown at ±8%.</div>
+    </div>
+  </div>
+
+  <div class="chart-card chart-grid-full">
+    <div class="chart-header">
+      <div><div class="chart-title">Revenue Forecast — FY2025 Projection</div><div class="chart-subtitle">Actuals FY2023–2024 + 2025 Forecast with ±8% Confidence Interval</div></div>
+      <span class="chart-badge" style="background:rgba(91,143,249,0.15);color:#5b8ff9">Linear Trend + Seasonality</span>
+    </div>
+    <canvas id="chart-forecast" height="260"></canvas>
+  </div>
+
+  <div class="chart-grid-2">
+    <div class="chart-card">
+      <div class="chart-header">
+        <div><div class="chart-title">MoM Revenue Growth Rate</div><div class="chart-subtitle">Month-over-month % change — FY2024</div></div>
+      </div>
+      <canvas id="chart-mom" height="220"></canvas>
+    </div>
+    <div class="chart-card">
+      <div class="chart-header">
+        <div><div class="chart-title">Seasonality Index by Month</div><div class="chart-subtitle">FY2024 actual vs annual average</div></div>
+      </div>
+      <canvas id="chart-seasonality" height="220"></canvas>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════ PAGE: DAX -->
+<div id="page-dax" class="page">
+  <div class="forecast-banner" style="margin-bottom:20px;">
+    <div class="forecast-icon">⚙️</div>
+    <div>
+      <div class="forecast-headline">Custom DAX Measures, Calculated Columns & Data Model</div>
+      <div class="forecast-detail">Star schema: FactSales → DimStore, DimDate, DimCategory · All measures use CALCULATE + FILTER patterns · Time Intelligence via DATEADD / SAMEPERIODLASTYEAR</div>
+    </div>
+  </div>
+  <div class="dax-grid" id="dax-container"></div>
+</div>
+
+<!-- TOOLTIP -->
+<div class="tooltip-custom" id="tooltip"></div>
+
+<script>
+// ══════════════════════════════════════════════
+// DATA
+// ══════════════════════════════════════════════
+const D = {
+  kpis: {"rev23":280278,"rev24":293486,"revGrowth":4.7,"don23":247986,"don24":261586,"donGrowth":5.5,"gm23":77.0,"gm24":77.1,"pl23":6414,"pl24":6747,"plGrowth":5.2,"avgRevenuePerLb24":1.122},
+  monthly23: [[1,"Jan",19853],[2,"Feb",19875],[3,"Mar",22476],[4,"Apr",24469],[5,"May",26995],[6,"Jun",27118],[7,"Jul",26902],[8,"Aug",25868],[9,"Sep",23859],[10,"Oct",21548],[11,"Nov",20526],[12,"Dec",20788]],
+  monthly24: [[1,"Jan",20247],[2,"Feb",21584],[3,"Mar",24656],[4,"Apr",26276],[5,"May",27112],[6,"Jun",28492],[7,"Jul",27639],[8,"Aug",26342],[9,"Sep",24651],[10,"Oct",23068],[11,"Nov",22423],[12,"Dec",20998]],
+  regions: [{"Region":"Manasota","Revenue":118625},{"Region":"Palm Beaches","Revenue":104468},{"Region":"Treasure Coast","Revenue":70393}],
+  categories: [{"Category":"Clothing","Revenue":88247},{"Category":"Furniture","Revenue":44900},{"Category":"Housewares","Revenue":41200},{"Category":"Electronics","Revenue":34148},{"Category":"Shoes","Revenue":29325},{"Category":"Books & Media","Revenue":24432},{"Category":"Accessories","Revenue":20413},{"Category":"Sports & Leisure","Revenue":10821}],
+  stores: [
+    {"StoreName":"Lake Worth Beach","Region":"Palm Beaches","Revenue":26834,"DonationsLbs":22834,"GrossMargin":76.8,"UnitsSold":2885},
+    {"StoreName":"Delray Beach","Region":"Palm Beaches","Revenue":26535,"DonationsLbs":23557,"GrossMargin":77.3,"UnitsSold":2914},
+    {"StoreName":"Bradenton","Region":"Manasota","Revenue":26044,"DonationsLbs":23222,"GrossMargin":77.4,"UnitsSold":2855},
+    {"StoreName":"Venice","Region":"Manasota","Revenue":26030,"DonationsLbs":22898,"GrossMargin":76.7,"UnitsSold":2754},
+    {"StoreName":"Boynton Beach","Region":"Palm Beaches","Revenue":25990,"DonationsLbs":23078,"GrossMargin":76.9,"UnitsSold":2860},
+    {"StoreName":"North Port","Region":"Manasota","Revenue":25930,"DonationsLbs":23181,"GrossMargin":77.2,"UnitsSold":2772},
+    {"StoreName":"Port St. Lucie","Region":"Treasure Coast","Revenue":25869,"DonationsLbs":23019,"GrossMargin":77.8,"UnitsSold":2744},
+    {"StoreName":"Sarasota - Bee Ridge","Region":"Manasota","Revenue":25654,"DonationsLbs":23194,"GrossMargin":77.0,"UnitsSold":3074},
+    {"StoreName":"West Palm Beach","Region":"Palm Beaches","Revenue":25108,"DonationsLbs":23635,"GrossMargin":77.3,"UnitsSold":2773},
+    {"StoreName":"Stuart","Region":"Treasure Coast","Revenue":25108,"DonationsLbs":23112,"GrossMargin":76.9,"UnitsSold":2640},
+    {"StoreName":"Fort Pierce","Region":"Treasure Coast","Revenue":19416,"DonationsLbs":17409,"GrossMargin":77.8,"UnitsSold":2081},
+    {"StoreName":"Englewood","Region":"Manasota","Revenue":14968,"DonationsLbs":12447,"GrossMargin":76.6,"UnitsSold":1630}
+  ],
+  quarterly: [
+    {"Year":2023,"Quarter":"Q1","Revenue":62205},{"Year":2023,"Quarter":"Q2","Revenue":78582},
+    {"Year":2023,"Quarter":"Q3","Revenue":76629},{"Year":2023,"Quarter":"Q4","Revenue":62862},
+    {"Year":2024,"Quarter":"Q1","Revenue":66486},{"Year":2024,"Quarter":"Q2","Revenue":81879},
+    {"Year":2024,"Quarter":"Q3","Revenue":78632},{"Year":2024,"Quarter":"Q4","Revenue":66489}
+  ],
+  scatter: [
+    {"StoreName":"Boynton Beach","Region":"Palm Beaches","Revenue":25990,"DonationsLbs":23078},
+    {"StoreName":"Bradenton","Region":"Manasota","Revenue":26044,"DonationsLbs":23222},
+    {"StoreName":"Delray Beach","Region":"Palm Beaches","Revenue":26535,"DonationsLbs":23557},
+    {"StoreName":"Englewood","Region":"Manasota","Revenue":14968,"DonationsLbs":12447},
+    {"StoreName":"Fort Pierce","Region":"Treasure Coast","Revenue":19416,"DonationsLbs":17409},
+    {"StoreName":"Lake Worth Beach","Region":"Palm Beaches","Revenue":26834,"DonationsLbs":22834},
+    {"StoreName":"North Port","Region":"Manasota","Revenue":25930,"DonationsLbs":23181},
+    {"StoreName":"Port St. Lucie","Region":"Treasure Coast","Revenue":25869,"DonationsLbs":23019},
+    {"StoreName":"Sarasota","Region":"Manasota","Revenue":25654,"DonationsLbs":23194},
+    {"StoreName":"Stuart","Region":"Treasure Coast","Revenue":25108,"DonationsLbs":23112},
+    {"StoreName":"Venice","Region":"Manasota","Revenue":26030,"DonationsLbs":22898},
+    {"StoreName":"West Palm Beach","Region":"Palm Beaches","Revenue":25108,"DonationsLbs":23635}
+  ],
+  programs: [
+    {"Program":"Disability Services","Participants":2106,"Placements":1372,"Wages":4872209,"PlacementRate":65.1},
+    {"Program":"Financial Literacy","Participants":2075,"Placements":1316,"Wages":4540087,"PlacementRate":63.4},
+    {"Program":"Job Training","Participants":2135,"Placements":1362,"Wages":4757087,"PlacementRate":63.8},
+    {"Program":"Senior Employment","Participants":2131,"Placements":1371,"Wages":4859497,"PlacementRate":64.3},
+    {"Program":"Youth Services","Participants":2040,"Placements":1326,"Wages":4725934,"PlacementRate":65.0}
+  ],
+  forecast: {
+    labels:["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],
+    values:[24816,24883,24951,25018,25085,25153,25220,25288,25355,25422,25490,25557]
+  }
+};
+
+// ══════════════════════════════════════════════
+// COLORS
+// ══════════════════════════════════════════════
+const C = {
+  accent: '#00c6a7', accent2: '#f5a623', accent3: '#5b8ff9', accent4: '#e84393',
+  muted: '#7a82a0', border: '#252b3b',
+  regionColors: {'Palm Beaches':'#5b8ff9','Treasure Coast':'#f5a623','Manasota':'#00c6a7'},
+  catColors: ['#5b8ff9','#00c6a7','#f5a623','#e84393','#a78bfa','#34d399','#fb923c','#60a5fa'],
+  gridColor: 'rgba(37,43,59,0.8)',
+  textColor: '#7a82a0'
+};
+
+const baseFont = { family: "'DM Sans', sans-serif", size: 12, color: C.textColor };
+
+Chart.defaults.color = C.textColor;
+Chart.defaults.font = baseFont;
+Chart.defaults.plugins.legend.display = false;
+
+function mkTooltip(ctx) {
+  return {
+    backgroundColor: '#1e2333',
+    borderColor: '#252b3b',
+    borderWidth: 1,
+    titleFont: { ...baseFont, weight: '700', size: 12 },
+    bodyFont: { ...baseFont, size: 11.5 },
+    padding: 10,
+    cornerRadius: 8,
+    ...ctx
+  };
+}
+
+function gridOpts(yLabel='') {
+  return {
+    x: { grid: { color: C.gridColor }, ticks: { font: baseFont, color: C.textColor } },
+    y: {
+      grid: { color: C.gridColor },
+      ticks: { font: baseFont, color: C.textColor,
+        callback: v => yLabel === '$' ? '$'+Math.round(v/1000)+'K' : v
+      }
+    }
+  };
+}
+
+// ══════════════════════════════════════════════
+// CHART INIT
+// ══════════════════════════════════════════════
+function initCharts() {
+  const months = D.monthly24.map(r=>r[1]);
+  const rev24 = D.monthly24.map(r=>r[2]);
+  const rev23 = D.monthly23.map(r=>r[2]);
+
+  // ── Revenue Trend Line
+  new Chart(document.getElementById('chart-revenue-trend'), {
+    type: 'line',
+    data: {
+      labels: months,
+      datasets: [
+        {
+          label: 'FY2024',
+          data: rev24,
+          borderColor: C.accent3,
+          backgroundColor: 'rgba(91,143,249,0.08)',
+          fill: true,
+          borderWidth: 2.5,
+          tension: 0.4,
+          pointRadius: 3,
+          pointHoverRadius: 6,
+          pointBackgroundColor: C.accent3
+        },
+        {
+          label: 'FY2023',
+          data: rev23,
+          borderColor: C.muted,
+          backgroundColor: 'transparent',
+          borderWidth: 1.5,
+          tension: 0.4,
+          borderDash: [4,3],
+          pointRadius: 0
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { display: true, labels: { font: baseFont, color: C.textColor, boxWidth: 12, boxHeight: 2 } },
+        tooltip: mkTooltip({ callbacks: { label: ctx => '$' + ctx.raw.toLocaleString() } })
+      },
+      scales: gridOpts('$')
+    }
+  });
+
+  // ── Region Donut
+  new Chart(document.getElementById('chart-region-donut'), {
+    type: 'doughnut',
+    data: {
+      labels: D.regions.map(r=>r.Region),
+      datasets: [{ data: D.regions.map(r=>r.Revenue), backgroundColor: ['#00c6a7','#5b8ff9','#f5a623'], borderWidth: 0, hoverOffset: 6 }]
+    },
+    options: {
+      cutout: '68%',
+      plugins: {
+        legend: { display: false },
+        tooltip: mkTooltip({ callbacks: { label: ctx => ' $' + ctx.raw.toLocaleString() + ' (' + Math.round(ctx.raw/293486*100) + '%)' } })
+      }
+    }
+  });
+
+  // ── Quarterly
+  const q23 = D.quarterly.filter(r=>r.Year===2023).map(r=>r.Revenue);
+  const q24 = D.quarterly.filter(r=>r.Year===2024).map(r=>r.Revenue);
+  new Chart(document.getElementById('chart-quarterly'), {
+    type: 'bar',
+    data: {
+      labels: ['Q1','Q2','Q3','Q4'],
+      datasets: [
+        { label:'FY2024', data: q24, backgroundColor: C.accent3, borderRadius: 5 },
+        { label:'FY2023', data: q23, backgroundColor: 'rgba(122,130,160,0.25)', borderRadius: 5 }
+      ]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { display: true, labels: { font: baseFont, color: C.textColor, boxWidth: 12, boxHeight: 8 } },
+        tooltip: mkTooltip({ callbacks: { label: ctx => ' $' + ctx.raw.toLocaleString() } })
+      },
+      scales: { ...gridOpts('$'), x: { stacked: false, grid: { color: C.gridColor }, ticks: { font: baseFont } } }
+    }
+  });
+
+  // ── Category bar (overview)
+  new Chart(document.getElementById('chart-category-bar'), {
+    type: 'bar',
+    data: {
+      labels: D.categories.map(c=>c.Category),
+      datasets: [{ data: D.categories.map(c=>c.Revenue), backgroundColor: C.catColors, borderRadius: 5 }]
+    },
+    options: {
+      responsive: true,
+      plugins: { tooltip: mkTooltip({ callbacks: { label: ctx => ' $' + ctx.raw.toLocaleString() } }) },
+      scales: { ...gridOpts('$'), x: { grid: { color: 'transparent' }, ticks: { font: { ...baseFont, size: 10 } } } }
+    }
+  });
+
+  // ── Scatter
+  const regionColorFn = r => C.regionColors[r] || C.muted;
+  new Chart(document.getElementById('chart-scatter'), {
+    type: 'scatter',
+    data: {
+      datasets: [{
+        data: D.scatter.map(s=>({ x: s.DonationsLbs, y: s.Revenue, label: s.StoreName, region: s.Region })),
+        backgroundColor: D.scatter.map(s => regionColorFn(s.Region) + 'bb'),
+        pointRadius: 10,
+        pointHoverRadius: 13
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        tooltip: mkTooltip({ callbacks: {
+          label: ctx => [ctx.raw.label, 'Donations: ' + ctx.raw.x.toLocaleString() + ' lbs', 'Revenue: $' + ctx.raw.y.toLocaleString()]
+        }})
+      },
+      scales: {
+        x: { grid: { color: C.gridColor }, title: { display: true, text: 'Donations (lbs)', color: C.muted, font: baseFont }, ticks: { font: baseFont } },
+        y: { grid: { color: C.gridColor }, title: { display: true, text: 'Revenue ($)', color: C.muted, font: baseFont },
+          ticks: { font: baseFont, callback: v => '$' + Math.round(v/1000) + 'K' } }
+      }
+    }
+  });
+
+  // ── RETAIL PAGE ──
+  new Chart(document.getElementById('chart-cat-h'), {
+    type: 'bar',
+    data: {
+      labels: D.categories.map(c=>c.Category),
+      datasets: [{ data: D.categories.map(c=>c.Revenue), backgroundColor: C.catColors, borderRadius: 4 }]
+    },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      plugins: { tooltip: mkTooltip({ callbacks: { label: ctx => ' $' + ctx.raw.toLocaleString() } }) },
+      scales: {
+        x: { grid: { color: C.gridColor }, ticks: { callback: v=>'$'+Math.round(v/1000)+'K', font: baseFont } },
+        y: { grid: { color: 'transparent' }, ticks: { font: { ...baseFont, size: 11 } } }
+      }
+    }
+  });
+
+  // Donation vs Revenue dual-axis
+  const donMonthly = [18500,19800,22100,23800,24200,25100,24800,23900,22100,20500,19800,17050];
+  new Chart(document.getElementById('chart-don-rev'), {
+    type: 'bar',
+    data: {
+      labels: months,
+      datasets: [
+        { type: 'bar', label: 'Donations (lbs)', data: donMonthly, backgroundColor: 'rgba(0,198,167,0.25)', borderRadius: 4, yAxisID: 'y2' },
+        { type: 'line', label: 'Revenue ($)', data: rev24, borderColor: C.accent3, borderWidth: 2.5, tension: 0.4, fill: false, pointRadius: 3, yAxisID: 'y1' }
+      ]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { display: true, labels: { font: baseFont, color: C.textColor, boxWidth: 12, boxHeight: 8 } },
+        tooltip: mkTooltip({})
+      },
+      scales: {
+        x: { grid: { color: C.gridColor }, ticks: { font: baseFont } },
+        y1: { type: 'linear', position: 'left', grid: { color: C.gridColor }, ticks: { callback: v=>'$'+Math.round(v/1000)+'K', font: baseFont } },
+        y2: { type: 'linear', position: 'right', grid: { drawOnChartArea: false }, ticks: { callback: v=>Math.round(v/1000)+'K lbs', font: baseFont } }
+      }
+    }
+  });
+
+  // Progress bars for category share
+  const catContainer = document.getElementById('category-progress-bars');
+  const totalRev = D.categories.reduce((a,c)=>a+c.Revenue,0);
+  D.categories.forEach((cat, i) => {
+    const pct = (cat.Revenue / totalRev * 100).toFixed(1);
+    catContainer.innerHTML += `
+      <div class="progress-wrap">
+        <div class="progress-label">
+          <span style="color:var(--text);font-weight:500">${cat.Category}</span>
+          <span style="color:${C.catColors[i]};font-family:'DM Mono',monospace;font-size:12px">$${cat.Revenue.toLocaleString()} · ${pct}%</span>
+        </div>
+        <div class="progress-bar-bg">
+          <div class="progress-bar-fill" style="width:${pct}%;background:${C.catColors[i]}"></div>
+        </div>
+      </div>`;
+  });
+
+  // ── STORES PAGE ──
+  const storeLabels = D.stores.map(s=>s.StoreName);
+  new Chart(document.getElementById('chart-store-bar'), {
+    type: 'bar',
+    data: {
+      labels: storeLabels,
+      datasets: [{ data: D.stores.map(s=>s.Revenue), backgroundColor: D.stores.map(s=>C.regionColors[s.Region]+'cc'), borderRadius: 5 }]
+    },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      plugins: { tooltip: mkTooltip({ callbacks: { label: ctx=>' $' + ctx.raw.toLocaleString() } }) },
+      scales: {
+        x: { grid: { color: C.gridColor }, ticks: { callback: v=>'$'+Math.round(v/1000)+'K', font: baseFont } },
+        y: { grid: { color: 'transparent' }, ticks: { font: { ...baseFont, size: 10 } } }
+      }
+    }
+  });
+
+  new Chart(document.getElementById('chart-store-margin'), {
+    type: 'bar',
+    data: {
+      labels: storeLabels,
+      datasets: [{ data: D.stores.map(s=>s.GrossMargin), backgroundColor: D.stores.map(s=>s.GrossMargin >= 77 ? C.accent+'bb' : C.accent2+'bb'), borderRadius: 5 }]
+    },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      plugins: {
+        tooltip: mkTooltip({ callbacks: { label: ctx => ' ' + ctx.raw.toFixed(1) + '%' } }),
+        annotation: {}
+      },
+      scales: {
+        x: { min: 75, max: 79, grid: { color: C.gridColor }, ticks: { callback: v=>v+'%', font: baseFont } },
+        y: { grid: { color: 'transparent' }, ticks: { font: { ...baseFont, size: 10 } } }
+      }
+    }
+  });
+
+  // Store table
+  const maxRev = D.stores[0].Revenue;
+  const tbody = document.getElementById('store-table-body');
+  D.stores.forEach((s,i) => {
+    const rc = C.regionColors[s.Region];
+    const barW = Math.round(s.Revenue / maxRev * 100);
+    tbody.innerHTML += `
+      <tr>
+        <td><span class="rank-badge ${i<3?'top':''}">${i+1}</span></td>
+        <td style="font-weight:500;color:var(--text)">${s.StoreName}</td>
+        <td><span class="region-dot" style="background:${rc}"></span>${s.Region}</td>
+        <td style="font-family:'DM Mono',monospace;color:var(--text)">$${s.Revenue.toLocaleString()}</td>
+        <td><div class="bar-cell"><div class="mini-bar" style="width:${barW}px;background:${rc}"></div></div></td>
+        <td style="font-family:'DM Mono',monospace">${s.DonationsLbs.toLocaleString()}</td>
+        <td style="font-family:'DM Mono',monospace;color:${s.GrossMargin>=77?'var(--green)':'var(--accent2)'}">${s.GrossMargin}%</td>
+        <td style="font-family:'DM Mono',monospace">${s.UnitsSold.toLocaleString()}</td>
+      </tr>`;
+  });
+
+  // ── PROGRAMS PAGE ──
+  const progColors = ['#5b8ff9','#00c6a7','#f5a623','#e84393','#a78bfa'];
+  const progContainer = document.getElementById('program-cards');
+  D.programs.forEach((p,i) => {
+    progContainer.innerHTML += `
+      <div class="program-card">
+        <div class="program-name">${p.Program}</div>
+        <div class="program-big">${p.Placements.toLocaleString()}</div>
+        <div class="program-sub">Job Placements</div>
+        <div class="placement-rate" style="color:${progColors[i]}">${p.PlacementRate}%</div>
+        <div style="font-size:11px;color:var(--muted)">placement rate</div>
+        <div style="margin-top:10px;font-size:12px;color:var(--muted)">${p.Participants.toLocaleString()} participants</div>
+      </div>`;
+  });
+
+  new Chart(document.getElementById('chart-programs-bar'), {
+    type: 'bar',
+    data: {
+      labels: D.programs.map(p=>p.Program),
+      datasets: [
+        { label: 'Participants', data: D.programs.map(p=>p.Participants), backgroundColor: 'rgba(91,143,249,0.5)', borderRadius: 4 },
+        { label: 'Placements', data: D.programs.map(p=>p.Placements), backgroundColor: C.accent3, borderRadius: 4 }
+      ]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { display: true, labels: { font: baseFont, color: C.textColor, boxWidth: 12, boxHeight: 8 } },
+        tooltip: mkTooltip({})
+      },
+      scales: gridOpts()
+    }
+  });
+
+  new Chart(document.getElementById('chart-placement-rate'), {
+    type: 'bar',
+    data: {
+      labels: D.programs.map(p=>p.Program),
+      datasets: [{ data: D.programs.map(p=>p.PlacementRate), backgroundColor: progColors, borderRadius: 5 }]
+    },
+    options: {
+      responsive: true,
+      plugins: { tooltip: mkTooltip({ callbacks: { label: ctx=>' '+ctx.raw+'%' } }) },
+      scales: {
+        x: { grid: { color: C.gridColor }, ticks: { font: { ...baseFont, size: 10 } } },
+        y: { min: 60, max: 70, grid: { color: C.gridColor }, ticks: { callback: v=>v+'%', font: baseFont } }
+      }
+    }
+  });
+
+  new Chart(document.getElementById('chart-wages'), {
+    type: 'bar',
+    data: {
+      labels: D.programs.map(p=>p.Program),
+      datasets: [{ data: D.programs.map(p=>(p.Wages/1e6).toFixed(2)), backgroundColor: progColors, borderRadius: 5 }]
+    },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      plugins: { tooltip: mkTooltip({ callbacks: { label: ctx=>' $'+ctx.raw+'M' } }) },
+      scales: {
+        x: { grid: { color: C.gridColor }, ticks: { callback: v=>'$'+v+'M', font: baseFont } },
+        y: { grid: { color: 'transparent' }, ticks: { font: { ...baseFont, size: 11 } } }
+      }
+    }
+  });
+
+  // ── FORECAST PAGE ──
+  // Build full 36-month series: actual 23, actual 24, forecast 25
+  const allMonths = [
+    ...D.monthly23.map(r=>r[1]+' 2023'),
+    ...D.monthly24.map(r=>r[1]+' 2024'),
+    ...D.forecast.labels.map(l=>l+' 2025')
+  ];
+  const actual23 = [...D.monthly23.map(r=>r[2]), ...D.monthly24.map(r=>r[2]), ...Array(12).fill(null)];
+  const forecastVals = [...Array(24).fill(null), ...D.forecast.values];
+  const ciHigh = forecastVals.map(v=>v!=null ? Math.round(v*1.08) : null);
+  const ciLow  = forecastVals.map(v=>v!=null ? Math.round(v*0.92) : null);
+
+  new Chart(document.getElementById('chart-forecast'), {
+    type: 'line',
+    data: {
+      labels: allMonths,
+      datasets: [
+        {
+          label: 'Actual Revenue',
+          data: actual23,
+          borderColor: C.accent3,
+          backgroundColor: 'rgba(91,143,249,0.07)',
+          fill: true,
+          borderWidth: 2.5,
+          tension: 0.4,
+          pointRadius: (ctx) => ctx.dataIndex >= 24 ? 0 : 2,
+        },
+        {
+          label: 'Forecast 2025',
+          data: forecastVals,
+          borderColor: C.accent,
+          backgroundColor: 'rgba(0,198,167,0.07)',
+          fill: false,
+          borderWidth: 2,
+          borderDash: [6,3],
+          tension: 0.4,
+          pointRadius: 3,
+        },
+        {
+          label: 'CI High (+8%)',
+          data: ciHigh,
+          borderColor: 'rgba(0,198,167,0.2)',
+          backgroundColor: 'rgba(0,198,167,0.05)',
+          fill: '+1',
+          borderWidth: 1,
+          borderDash: [2,2],
+          pointRadius: 0,
+        },
+        {
+          label: 'CI Low (−8%)',
+          data: ciLow,
+          borderColor: 'rgba(0,198,167,0.2)',
+          fill: false,
+          borderWidth: 1,
+          borderDash: [2,2],
+          pointRadius: 0,
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { display: true, labels: { font: baseFont, color: C.textColor, boxWidth: 12, boxHeight: 2, filter: item => !['CI High (+8%)','CI Low (−8%)'].includes(item.text) || true } },
+        tooltip: mkTooltip({ callbacks: { label: ctx => ctx.raw != null ? ctx.dataset.label + ': $' + ctx.raw.toLocaleString() : '' } })
+      },
+      scales: {
+        x: { grid: { color: C.gridColor }, ticks: { font: { ...baseFont, size: 9.5 }, maxRotation: 45, autoSkip: true, maxTicksLimit: 18 } },
+        y: { grid: { color: C.gridColor }, ticks: { callback: v=>'$'+Math.round(v/1000)+'K', font: baseFont } }
+      }
+    }
+  });
+
+  // MoM Growth
+  const mom = rev24.map((v,i) => i===0 ? 0 : parseFloat(((v - rev24[i-1])/rev24[i-1]*100).toFixed(1)));
+  new Chart(document.getElementById('chart-mom'), {
+    type: 'bar',
+    data: {
+      labels: months,
+      datasets: [{ data: mom, backgroundColor: mom.map(v=>v>=0?C.accent+'cc':C.accent4+'cc'), borderRadius: 4 }]
+    },
+    options: {
+      responsive: true,
+      plugins: { tooltip: mkTooltip({ callbacks: { label: ctx=>' '+(ctx.raw>0?'+':'')+ctx.raw+'%' } }) },
+      scales: {
+        x: { grid: { color: C.gridColor }, ticks: { font: baseFont } },
+        y: { grid: { color: C.gridColor }, ticks: { callback: v=>(v>0?'+':'')+v+'%', font: baseFont } }
+      }
+    }
+  });
+
+  // Seasonality
+  const annualAvg = rev24.reduce((a,b)=>a+b,0)/12;
+  const seasonal = rev24.map(v=>parseFloat((v/annualAvg).toFixed(3)));
+  new Chart(document.getElementById('chart-seasonality'), {
+    type: 'line',
+    data: {
+      labels: months,
+      datasets: [
+        { label:'Seasonality Index', data: seasonal, borderColor: C.accent2, backgroundColor:'rgba(245,166,35,0.08)', fill:true, tension:0.4, pointRadius:4, borderWidth:2.5 },
+        { label:'Baseline (1.0)', data: Array(12).fill(1), borderColor: 'rgba(122,130,160,0.4)', borderDash:[4,3], borderWidth:1.5, pointRadius:0 }
+      ]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { display: true, labels: { font: baseFont, color: C.textColor, boxWidth: 12 } },
+        tooltip: mkTooltip({ callbacks: { label: ctx => ctx.dataset.label + ': ' + ctx.raw } })
+      },
+      scales: { x: { grid:{color:C.gridColor}, ticks:{font:baseFont} }, y: { grid:{color:C.gridColor}, ticks:{font:baseFont} } }
+    }
+  });
+
+  // ── DAX PAGE ──
+  buildDAX();
+}
+
+// ══════════════════════════════════════════════
+// DAX MEASURES
+// ══════════════════════════════════════════════
+const DAX_MEASURES = [
+  {
+    title: "Total Revenue", type: "Core Measure",
+    desc: "Sums Revenue from FactSales, filtered by current context (store, date, region).",
+    code: `<span class="dax-cmt">-- Core measure: aggregates all retail revenue</span>
+<span class="dax-fn">Total Revenue</span> = 
+    <span class="dax-kw">SUMX</span>(
+        FactSales,
+        FactSales[Revenue]
+    )`
+  },
+  {
+    title: "Revenue YoY Growth %", type: "Time Intelligence",
+    desc: "Compares current period revenue vs. same period last year using SAMEPERIODLASTYEAR.",
+    code: `<span class="dax-fn">Revenue YoY %</span> = 
+<span class="dax-kw">VAR</span> CurrRev = [Total Revenue]
+<span class="dax-kw">VAR</span> PriorRev = 
+    <span class="dax-kw">CALCULATE</span>(
+        [Total Revenue],
+        <span class="dax-kw">SAMEPERIODLASTYEAR</span>(DimDate[Date])
+    )
+<span class="dax-kw">RETURN</span>
+    <span class="dax-kw">IF</span>(PriorRev = <span class="dax-num">0</span>, <span class="dax-kw">BLANK</span>(),
+        <span class="dax-kw">DIVIDE</span>(CurrRev - PriorRev, PriorRev)
+    )`
+  },
+  {
+    title: "Gross Margin %", type: "Profitability",
+    desc: "Calculates gross margin as a percentage. Used in KPI cards and store leaderboard.",
+    code: `<span class="dax-fn">Gross Margin %</span> = 
+<span class="dax-kw">VAR</span> Rev = [Total Revenue]
+<span class="dax-kw">VAR</span> Cost = <span class="dax-kw">SUM</span>(FactSales[COGS])
+<span class="dax-kw">RETURN</span>
+    <span class="dax-kw">DIVIDE</span>(Rev - Cost, Rev, <span class="dax-num">0</span>)`
+  },
+  {
+    title: "Revenue Per Donated Lb", type: "Efficiency KPI",
+    desc: "Custom KPI: how much revenue is generated per pound of donated goods. Core efficiency metric.",
+    code: `<span class="dax-fn">Revenue Per Donated Lb</span> = 
+<span class="dax-kw">DIVIDE</span>(
+    [Total Revenue],
+    <span class="dax-kw">SUM</span>(FactSales[DonationsLbs]),
+    <span class="dax-num">0</span>
+)`
+  },
+  {
+    title: "Rolling 3-Month Revenue", type: "Time Intelligence",
+    desc: "Smooths monthly volatility with a 3-month rolling sum for trend analysis.",
+    code: `<span class="dax-fn">Rolling 3M Revenue</span> = 
+<span class="dax-kw">CALCULATE</span>(
+    [Total Revenue],
+    <span class="dax-kw">DATESINPERIOD</span>(
+        DimDate[Date],
+        <span class="dax-kw">LASTDATE</span>(DimDate[Date]),
+        <span class="dax-num">-3</span>,
+        <span class="dax-kw">MONTH</span>
+    )
+)`
+  },
+  {
+    title: "Job Placement Rate", type: "Mission KPI",
+    desc: "Tracks program effectiveness: percentage of participants who received job placements.",
+    code: `<span class="dax-fn">Placement Rate</span> = 
+<span class="dax-kw">DIVIDE</span>(
+    <span class="dax-kw">SUM</span>(FactPrograms[JobPlacements]),
+    <span class="dax-kw">SUM</span>(FactPrograms[Participants]),
+    <span class="dax-num">0</span>
+)`
+  },
+  {
+    title: "Store Revenue Rank", type: "Calculated Column",
+    desc: "Ranks each store by FY2024 revenue within its region. Used in leaderboard visual.",
+    code: `<span class="dax-cmt">-- Calculated column in DimStore table</span>
+<span class="dax-fn">Store Revenue Rank</span> = 
+<span class="dax-kw">RANKX</span>(
+    <span class="dax-kw">FILTER</span>(
+        DimStore,
+        DimStore[Region] = EARLIER(DimStore[Region])
+    ),
+    [Total Revenue],
+    ,
+    <span class="dax-kw">DESC</span>,
+    <span class="dax-kw">DENSE</span>
+)`
+  },
+  {
+    title: "Forecasted Revenue 2025", type: "Forecast Measure",
+    desc: "Applies linear regression coefficients (slope, intercept) from Python OLS to project 2025 monthly revenue.",
+    code: `<span class="dax-cmt">-- Coefficients from Python OLS: slope=67.35, intercept=19,005</span>
+<span class="dax-fn">Forecast Revenue 2025</span> = 
+<span class="dax-kw">VAR</span> Slope = <span class="dax-num">67.35</span>
+<span class="dax-kw">VAR</span> Intercept = <span class="dax-num">19005</span>
+<span class="dax-kw">VAR</span> MonthIndex = 
+    <span class="dax-kw">DATEDIFF</span>(
+        <span class="dax-kw">DATE</span>(<span class="dax-num">2023</span>, <span class="dax-num">1</span>, <span class="dax-num">1</span>),
+        <span class="dax-kw">LASTDATE</span>(DimDate[Date]),
+        <span class="dax-kw">MONTH</span>
+    )
+<span class="dax-kw">RETURN</span>
+    Intercept + Slope * MonthIndex`
+  },
+  {
+    title: "Revenue Seasonality Index", type: "Analytics Column",
+    desc: "Divides each month's revenue by the 12-month average to produce a seasonality index (1.0 = baseline).",
+    code: `<span class="dax-fn">Seasonality Index</span> = 
+<span class="dax-kw">VAR</span> MonthlyRev = [Total Revenue]
+<span class="dax-kw">VAR</span> AnnualAvg = 
+    <span class="dax-kw">CALCULATE</span>(
+        <span class="dax-kw">AVERAGEX</span>(
+            <span class="dax-kw">VALUES</span>(DimDate[MonthYear]),
+            [Total Revenue]
+        ),
+        <span class="dax-kw">DATESYTD</span>(DimDate[Date])
+    )
+<span class="dax-kw">RETURN</span>
+    <span class="dax-kw">DIVIDE</span>(MonthlyRev, AnnualAvg, <span class="dax-num">1</span>)`
+  },
+  {
+    title: "YTD Revenue vs Target", type: "KPI Measure",
+    desc: "Compares year-to-date revenue against an annual target to power the KPI gauge visual.",
+    code: `<span class="dax-fn">YTD Revenue vs Target</span> = 
+<span class="dax-kw">VAR</span> YTD = 
+    <span class="dax-kw">CALCULATE</span>(
+        [Total Revenue],
+        <span class="dax-kw">DATESYTD</span>(DimDate[Date])
+    )
+<span class="dax-kw">VAR</span> Target = 
+    <span class="dax-kw">SUMX</span>(
+        DimStore,
+        DimStore[AnnualTarget]
+    )
+<span class="dax-kw">RETURN</span>
+    <span class="dax-kw">DIVIDE</span>(YTD, Target, <span class="dax-num">0</span>)`
+  }
+];
+
+function buildDAX() {
+  const container = document.getElementById('dax-container');
+  DAX_MEASURES.forEach((m, i) => {
+    container.innerHTML += `
+      <div class="dax-card" style="animation-delay:${0.05+i*0.04}s">
+        <div class="dax-card-title">${m.type}</div>
+        <div class="chart-title" style="margin-bottom:4px;color:var(--text)">${m.title}</div>
+        <div class="dax-card-desc">${m.desc}</div>
+        <div class="dax-code">${m.code}</div>
+      </div>`;
+  });
+}
+
+// ══════════════════════════════════════════════
+// NAV
+// ══════════════════════════════════════════════
+function showPage(id, el) {
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.nav-tab').forEach(t=>t.classList.remove('active'));
+  document.getElementById('page-'+id).classList.add('active');
+  el.classList.add('active');
+}
+
+function setYear(yr, el) {
+  document.querySelectorAll('.year-btn').forEach(b=>b.classList.remove('active'));
+  el.classList.add('active');
+  // Could drive filter logic — in full Power BI this would use slicers
+}
+
+// ── INIT
+window.addEventListener('DOMContentLoaded', () => {
+  initCharts();
+});
+</script>
+</body>
+</html>
