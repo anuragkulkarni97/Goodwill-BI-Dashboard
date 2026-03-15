@@ -2,7 +2,7 @@ Goodwill Industries - Power BI Business Intelligence Dashboard
 
 A comprehensive business intelligence project building an end-to-end Power BI dashboard for Goodwill Industries - Palm Beaches, Treasure Coast and Manasota. 
 
-This repository covers the complete BI pipeline from synthetic data generation and data modelling through custom DAX measure development, Power Query transformations, and a six-page interactive dashboard, including a Python-powered OLS revenue forecast for FY2025.
+This repository covers the complete BI pipeline from synthetic data generation and data modelling through custom DAX measure development, Power Query transformations, and a six-page interactive dashboard, a Power BI ETS revenue forecast for FY2025.
 
 
 The dashboard is built on a synthetic dataset modelled on real Goodwill operational data across 12 store locations, 8 product categories, and 5 workforce development programs spanning FY2023 through FY2024, submitted as a BI Analyst work sample in February 2025.
@@ -19,12 +19,9 @@ All relationships are one-to-many from dimension to fact with single cross-filte
 
 Custom DAX Measures: 
 
-Built eight custom DAX measures organized in a dedicated measures table, covering total revenue, revenue year-over-year growth using SAMEPERIODLASTYEAR time intelligence, gross margin percentage, a Goodwill-specific revenue-per-donated-pound efficiency KPI, rolling three-month revenue for noise smoothing, job placement rate, a Python-derived OLS forecast for FY2025, and a YTD revenue vs target gauge.
+Built eight custom DAX measures organized in a dedicated measures table, covering total revenue, revenue year-over-year growth using SAMEPERIODLASTYEAR time intelligence, gross margin percentage, a Goodwill-specific revenue-per-donated-pound efficiency KPI, rolling three-month revenue for noise smoothing, job placement rate, a Power BI ETS revenue forecast for FY2025, and a YTD revenue vs target gauge.
 
 
-Python OLS Forecasting: 
-
-Derived OLS regression coefficients, slope 67.35, intercept 19,005, R² approximately 0.87, by running a linear regression on 24 months of monthly revenue data in Python using NumPy polyfit. These coefficients are embedded directly into the DAX Forecast measure, bridging Python analysis with live Power BI reporting.
 
 
 Power Query Transformations: 
@@ -62,7 +59,8 @@ Tech Stack:
 
 Power BI Desktop: For data modelling, DAX development, Power Query transformations, and dashboard design.
 
-DAX: For eight custom measures and four calculated columns covering time intelligence, efficiency KPIs, and OLS forecasting.
+DAX: For eight custom measures and four calculated columns covering time intelligence, efficiency KPIs, and ETS revenue forecasting.
+
 
 Power Query (M): For data cleaning, date table generation, and column transformations.
 
@@ -90,11 +88,11 @@ Future improvements could include:
 
 Live Data Connection: Replacing the embedded synthetic dataset with a direct connection to Goodwill's POS and donor management systems, enabling the dashboard to refresh automatically with real transaction-level data.
 
-Automated Forecast Refresh: Moving the OLS regression from a static coefficient to a Python dataflow or parameterised M query that reruns the regression on each refresh, keeping the forecast coefficients current as new months of data arrive.
+Automated Forecast Refresh: Automating the forecast refresh using a parameterised M query that updates projections automatically as new months of data arrive, keeping the FY2025 outlook current without manual intervention.
 
 Anomaly Detection: Adding a DAX measure that flags stores or categories where the current month's revenue deviates more than two standard deviations from the rolling average, surfacing operational issues before they appear in quarterly reviews.
 
-Donor Segmentation: Extending the data model with a donor dimension and building an RFM (Recency, Frequency, Monetary) segmentation model in Python, feeding donor tier assignments back into Power BI to analyse how donation behaviour drives revenue by store.
+Donor Segmentation: Extending the data model with a donor dimension and building an RFM (Recency, Frequency, Monetary) segmentation model in Power BI, feeding donor tier assignments back into reporting to analyse how donation behaviour drives revenue by store.
 
 About:
 
