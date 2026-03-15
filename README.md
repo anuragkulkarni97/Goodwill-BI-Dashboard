@@ -66,7 +66,6 @@ DAX: For eight custom measures and four calculated columns covering time intelli
 
 Power Query (M): For data cleaning, date table generation, and column transformations.
 
-Python (NumPy and Pandas): For synthetic data generation and OLS regression to derive forecast coefficients.
 
 
 How to Open:
